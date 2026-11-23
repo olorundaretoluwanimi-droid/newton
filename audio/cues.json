@@ -1,0 +1,1467 @@
+[
+ {
+  "t0": 1.1,
+  "t1": 3.3,
+  "text": "Newton, Iowa."
+ },
+ {
+  "t0": 3.32,
+  "t1": 8.15,
+  "text": "Thursday, 25 October 2007."
+ },
+ {
+  "t0": 8.65,
+  "t1": 12.62,
+  "text": "That day, the last washing machines and dryers"
+ },
+ {
+  "t0": 12.64,
+  "t1": 16.51,
+  "text": "came off the line at the Maytag factory."
+ },
+ {
+  "t0": 17.01,
+  "t1": 19.98,
+  "text": "550 workers walked out of a building"
+ },
+ {
+  "t0": 20.0,
+  "t1": 23.05,
+  "text": "that covered two million square feet."
+ },
+ {
+  "t0": 23.07,
+  "t1": 25.88,
+  "text": "Some of them hung their work boots"
+ },
+ {
+  "t0": 25.9,
+  "t1": 28.7,
+  "text": "on the fence by the employee gate."
+ },
+ {
+  "t0": 28.72,
+  "t1": 31.95,
+  "text": "They would not need them tomorrow."
+ },
+ {
+  "t0": 32.45,
+  "t1": 38.49,
+  "text": "One man, after 26 years in the plant, carried out a sign."
+ },
+ {
+  "t0": 38.51,
+  "t1": 43.6,
+  "text": "It said: “Maytag, the dependability people.”"
+ },
+ {
+  "t0": 44.1,
+  "t1": 50.12,
+  "text": "For more than a hundred years, this town made washing machines."
+ },
+ {
+  "t0": 50.14,
+  "t1": 53.38,
+  "text": "At the peak, more than one in five"
+ },
+ {
+  "t0": 53.4,
+  "t1": 57.15,
+  "text": "people in Newton worked for Maytag."
+ },
+ {
+  "t0": 57.65,
+  "t1": 59.54,
+  "text": "If you are old enough,"
+ },
+ {
+  "t0": 59.56,
+  "t1": 63.69,
+  "text": "you remember the Maytag repairman on television."
+ },
+ {
+  "t0": 63.71,
+  "t1": 69.48,
+  "text": "He was the loneliest man in town, because Maytags never broke."
+ },
+ {
+  "t0": 69.98,
+  "t1": 72.69,
+  "text": "So how does the town that built"
+ },
+ {
+  "t0": 72.71,
+  "t1": 75.59,
+  "text": "America's most dependable machine"
+ },
+ {
+  "t0": 75.61,
+  "t1": 77.5,
+  "text": "end up losing it?"
+ },
+ {
+  "t0": 78.0,
+  "t1": 81.8,
+  "text": "This is the story of what happened to Newton."
+ },
+ {
+  "t0": 81.82,
+  "t1": 85.95,
+  "text": "Every picture you will see is of the real Newton,"
+ },
+ {
+  "t0": 85.97,
+  "t1": 88.24,
+  "text": "or of the machines it made."
+ },
+ {
+  "t0": 88.26,
+  "t1": 90.45,
+  "text": "Every number has a source."
+ },
+ {
+  "t0": 90.47,
+  "t1": 93.33,
+  "text": "And you will read the words of the"
+ },
+ {
+  "t0": 93.35,
+  "t1": 96.47,
+  "text": "people who built those machines."
+ },
+ {
+  "t0": 96.97,
+  "t1": 100.85,
+  "text": "We go from a farm-equipment shop in 1893,"
+ },
+ {
+  "t0": 100.87,
+  "t1": 103.8,
+  "text": "to the washer that won America,"
+ },
+ {
+  "t0": 103.82,
+  "t1": 109.84,
+  "text": "to the day the line stopped, and to what Newton built next."
+ },
+ {
+  "t0": 110.34,
+  "t1": 113.46,
+  "text": "If your family ever owned a Maytag,"
+ },
+ {
+  "t0": 113.48,
+  "t1": 117.32,
+  "text": "or worked a shift in a plant like this one,"
+ },
+ {
+  "t0": 117.34,
+  "t1": 119.9,
+  "text": "this story is yours too."
+ },
+ {
+  "t0": 124.6,
+  "t1": 127.92,
+  "text": "Newton sits thirty miles east of Des Moines,"
+ },
+ {
+  "t0": 127.94,
+  "t1": 132.51,
+  "text": "in the middle of some of the richest farmland on earth."
+ },
+ {
+  "t0": 133.01,
+  "t1": 136.86,
+  "text": "In 1893, four men here each put up $600."
+ },
+ {
+  "t0": 136.88,
+  "t1": 139.85,
+  "text": "One was Frederick Louis Maytag,"
+ },
+ {
+  "t0": 139.87,
+  "t1": 145.46,
+  "text": "the son of German immigrants who farmed near Laurel, Iowa."
+ },
+ {
+  "t0": 145.48,
+  "t1": 149.61,
+  "text": "Two were his brothers-in-law, the Bergmans."
+ },
+ {
+  "t0": 149.63,
+  "t1": 152.22,
+  "text": "The fourth, George Parsons,"
+ },
+ {
+  "t0": 152.24,
+  "t1": 156.41,
+  "text": "had invented the thing they would make."
+ },
+ {
+  "t0": 156.91,
+  "t1": 158.71,
+  "text": "It was a self-feeder:"
+ },
+ {
+  "t0": 158.73,
+  "t1": 163.22,
+  "text": "an attachment that cut the bands on bundles of grain"
+ },
+ {
+  "t0": 163.24,
+  "t1": 166.52,
+  "text": "and fed them into a threshing machine."
+ },
+ {
+  "t0": 166.54,
+  "t1": 171.8,
+  "text": "They set up in an old stove works, thirty feet by forty."
+ },
+ {
+  "t0": 172.3,
+  "t1": 176.5,
+  "text": "It sold. By 1902, they were the largest"
+ },
+ {
+  "t0": 176.52,
+  "t1": 180.71,
+  "text": "maker of self-feeders in the world."
+ },
+ {
+  "t0": 181.21,
+  "t1": 183.51,
+  "text": "This is Newton in 1907."
+ },
+ {
+  "t0": 183.53,
+  "t1": 187.45,
+  "text": "The courthouse square, the farm wagons,"
+ },
+ {
+  "t0": 187.47,
+  "t1": 191.31,
+  "text": "the shops with their awnings down."
+ },
+ {
+  "t0": 191.81,
+  "t1": 195.45,
+  "text": "That same year, Maytag tried something new."
+ },
+ {
+  "t0": 195.47,
+  "t1": 199.88,
+  "text": "Farm machinery sold at harvest, and then it stopped."
+ },
+ {
+  "t0": 199.9,
+  "t1": 204.29,
+  "text": "He needed something to make in the slow months."
+ },
+ {
+  "t0": 204.79,
+  "t1": 209.29,
+  "text": "So he built a washing machine. He called it the Pastime."
+ },
+ {
+  "t0": 209.31,
+  "t1": 214.12,
+  "text": "It was a wooden tub with a hand crank. You worked the crank,"
+ },
+ {
+  "t0": 214.14,
+  "t1": 216.94,
+  "text": "and a wooden dolly with pegs pushed"
+ },
+ {
+  "t0": 216.96,
+  "t1": 219.94,
+  "text": "the clothes around in the water."
+ },
+ {
+  "t0": 220.44,
+  "t1": 226.79,
+  "text": "A century later, Leland Smith, who worked 40 years at Maytag,"
+ },
+ {
+  "t0": 226.81,
+  "t1": 231.59,
+  "text": "showed a reporter one of those first machines."
+ },
+ {
+  "t0": 231.61,
+  "t1": 235.67,
+  "text": "“We call this the Milkstool Dolly.”"
+ },
+ {
+  "t0": 236.17,
+  "t1": 239.96,
+  "text": "He was not the only one with the idea."
+ },
+ {
+  "t0": 239.98,
+  "t1": 245.49,
+  "text": "Look at the fire-insurance map of Newton from 1918."
+ },
+ {
+  "t0": 245.99,
+  "t1": 248.86,
+  "text": "On one sheet, beside the railway:"
+ },
+ {
+  "t0": 248.88,
+  "t1": 252.97,
+  "text": "the Maytag Company, makers of washing machines."
+ },
+ {
+  "t0": 252.99,
+  "t1": 255.86,
+  "text": "Across the street, the One Minute"
+ },
+ {
+  "t0": 255.88,
+  "t1": 259.36,
+  "text": "Manufacturing Company. Washing machines."
+ },
+ {
+  "t0": 259.38,
+  "t1": 263.48,
+  "text": "Up the road, the Woodrow Manufacturing Company."
+ },
+ {
+  "t0": 263.5,
+  "t1": 264.96,
+  "text": "Washing machines."
+ },
+ {
+  "t0": 264.98,
+  "t1": 270.98,
+  "text": "The index lists a fourth, the Automatic Electric Washer Company."
+ },
+ {
+  "t0": 271.48,
+  "t1": 277.11,
+  "text": "A town of about 5,000 people, and four washing-machine makers."
+ },
+ {
+  "t0": 277.13,
+  "t1": 283.26,
+  "text": "Newton became known as the washing-machine center of the world."
+ },
+ {
+  "t0": 287.96,
+  "t1": 291.47,
+  "text": "Most farm homes had no electricity yet."
+ },
+ {
+  "t0": 291.49,
+  "t1": 294.37,
+  "text": "So in 1914, Maytag sold a washer"
+ },
+ {
+  "t0": 294.39,
+  "t1": 297.53,
+  "text": "with its own small gasoline engine."
+ },
+ {
+  "t0": 297.55,
+  "t1": 301.61,
+  "text": "The Multi-Motor. The advertisements called it"
+ },
+ {
+  "t0": 301.63,
+  "t1": 304.83,
+  "text": "“the farm woman's best friend.”"
+ },
+ {
+  "t0": 305.33,
+  "t1": 308.41,
+  "text": "In 1919, the company cast a washer"
+ },
+ {
+  "t0": 308.43,
+  "t1": 311.51,
+  "text": "tub in a single piece of aluminum."
+ },
+ {
+  "t0": 311.53,
+  "t1": 316.48,
+  "text": "People in the trade had said it could not be done."
+ },
+ {
+  "t0": 316.98,
+  "t1": 321.18,
+  "text": "Then came the machine that changed everything."
+ },
+ {
+  "t0": 321.68,
+  "t1": 324.93,
+  "text": "Howard Snyder had started as a mechanic,"
+ },
+ {
+  "t0": 324.95,
+  "t1": 329.01,
+  "text": "and risen to head Maytag's development department."
+ },
+ {
+  "t0": 329.03,
+  "t1": 332.27,
+  "text": "Maytag's washers, like most of the time,"
+ },
+ {
+  "t0": 332.29,
+  "t1": 334.8,
+  "text": "used a dolly under the lid that"
+ },
+ {
+  "t0": 334.82,
+  "t1": 338.32,
+  "text": "dragged the clothes through the water."
+ },
+ {
+  "t0": 338.82,
+  "t1": 341.78,
+  "text": "Snyder turned the idea upside down."
+ },
+ {
+  "t0": 341.8,
+  "t1": 345.95,
+  "text": "He put a vaned agitator at the bottom of the tub,"
+ },
+ {
+  "t0": 345.97,
+  "t1": 350.36,
+  "text": "so the water moved through the clothes instead."
+ },
+ {
+  "t0": 350.86,
+  "t1": 354.73,
+  "text": "Maytag called it the Gyrafoam."
+ },
+ {
+  "t0": 354.75,
+  "t1": 358.25,
+  "text": "It went on sale in 1922."
+ },
+ {
+  "t0": 358.75,
+  "t1": 362.25,
+  "text": "By one company history, it took Maytag"
+ },
+ {
+  "t0": 362.27,
+  "t1": 368.6,
+  "text": "from the 38th largest washer maker in the country, to the first."
+ },
+ {
+  "t0": 369.1,
+  "t1": 371.92,
+  "text": "Within 18 months, it was the most"
+ },
+ {
+  "t0": 371.94,
+  "t1": 374.93,
+  "text": "popular washing machine in America."
+ },
+ {
+  "t0": 374.95,
+  "t1": 380.17,
+  "text": "Trainloads of Gyrafoams left Newton in single shipments."
+ },
+ {
+  "t0": 380.67,
+  "t1": 387.32,
+  "text": "By 1927, Maytag had built its millionth washer."
+ },
+ {
+  "t0": 387.82,
+  "t1": 391.42,
+  "text": "The town grew with it."
+ },
+ {
+  "t0": 391.44,
+  "t1": 396.84,
+  "text": "In 1900, Newton had 3,600 people."
+ },
+ {
+  "t0": 396.86,
+  "t1": 401.04,
+  "text": "By 1930, it had 11,500."
+ },
+ {
+  "t0": 401.54,
+  "t1": 405.27,
+  "text": "In 1929, the company made record profits."
+ },
+ {
+  "t0": 405.29,
+  "t1": 411.46,
+  "text": "And it got through the Depression without a single losing year."
+ },
+ {
+  "t0": 411.96,
+  "t1": 416.77,
+  "text": "In 1932, at the bottom of that Depression,"
+ },
+ {
+  "t0": 416.79,
+  "t1": 419.29,
+  "text": "Fred Maytag turned 75."
+ },
+ {
+  "t0": 419.31,
+  "t1": 422.97,
+  "text": "To mark the day, he gave each of"
+ },
+ {
+  "t0": 422.99,
+  "t1": 427.53,
+  "text": "his 1,500 workers a hundred dollars."
+ },
+ {
+  "t0": 432.23,
+  "t1": 436.55,
+  "text": "Frederick Louis Maytag died in March 1937."
+ },
+ {
+  "t0": 436.57,
+  "t1": 442.64,
+  "text": "By one account, 10,000 workers and salesmen stood in a line"
+ },
+ {
+  "t0": 442.66,
+  "t1": 446.98,
+  "text": "five blocks long to watch his casket pass."
+ },
+ {
+  "t0": 447.0,
+  "t1": 449.78,
+  "text": "He is buried in Newton."
+ },
+ {
+  "t0": 450.28,
+  "t1": 455.16,
+  "text": "A year later, the town that had grown up on his washers"
+ },
+ {
+  "t0": 455.18,
+  "t1": 457.09,
+  "text": "turned on itself."
+ },
+ {
+  "t0": 457.59,
+  "t1": 464.56,
+  "text": "In May 1938, the company posted a notice: a 10% cut in pay."
+ },
+ {
+  "t0": 464.58,
+  "t1": 470.13,
+  "text": "The workers had formed a union the year before:"
+ },
+ {
+  "t0": 470.15,
+  "t1": 475.77,
+  "text": "Local 1116 of the United Electrical Workers."
+ },
+ {
+  "t0": 476.27,
+  "t1": 478.25,
+  "text": "On 9 May, they struck."
+ },
+ {
+  "t0": 478.27,
+  "t1": 480.97,
+  "text": "They stayed at their machines,"
+ },
+ {
+  "t0": 480.99,
+  "t1": 484.94,
+  "text": "so that no one could take their places."
+ },
+ {
+  "t0": 485.44,
+  "t1": 489.27,
+  "text": "A judge issued an injunction against the pickets."
+ },
+ {
+  "t0": 489.29,
+  "t1": 493.44,
+  "text": "In late June, the strikers took over the plant again,"
+ },
+ {
+  "t0": 493.46,
+  "t1": 496.59,
+  "text": "and held five foremen inside for a week."
+ },
+ {
+  "t0": 496.61,
+  "t1": 501.5,
+  "text": "Their leaders were arrested, and charged with kidnapping."
+ },
+ {
+  "t0": 502.0,
+  "t1": 507.86,
+  "text": "Then, on 21 July, the governor of Iowa, Nelson Kraschel,"
+ },
+ {
+  "t0": 507.88,
+  "t1": 513.85,
+  "text": "sent in the National Guard, and declared martial law."
+ },
+ {
+  "t0": 514.35,
+  "t1": 517.48,
+  "text": "Soldiers stood across from the plant."
+ },
+ {
+  "t0": 517.5,
+  "t1": 520.12,
+  "text": "Cars were kept two blocks away."
+ },
+ {
+  "t0": 520.14,
+  "t1": 524.2,
+  "text": "Club meetings and softball games were cancelled."
+ },
+ {
+  "t0": 524.22,
+  "t1": 528.11,
+  "text": "That night, in the streets around the factory,"
+ },
+ {
+  "t0": 528.13,
+  "t1": 529.81,
+  "text": "34 people were hurt."
+ },
+ {
+  "t0": 529.83,
+  "t1": 533.63,
+  "text": "Most of them were workers going back in."
+ },
+ {
+  "t0": 534.13,
+  "t1": 536.91,
+  "text": "The governor said martial law was"
+ },
+ {
+  "t0": 536.93,
+  "t1": 540.04,
+  "text": "“only for the benefit of the public”."
+ },
+ {
+  "t0": 540.06,
+  "t1": 543.6,
+  "text": "The union saw a strike broken by soldiers."
+ },
+ {
+  "t0": 543.62,
+  "t1": 547.25,
+  "text": "And Fred Maytag II, the founder's grandson,"
+ },
+ {
+  "t0": 547.27,
+  "t1": 550.29,
+  "text": "was reported to have said this:"
+ },
+ {
+  "t0": 550.79,
+  "t1": 556.3,
+  "text": "“Apparently, our employees weren't so happy as we thought!”"
+ },
+ {
+  "t0": 556.8,
+  "t1": 561.08,
+  "text": "On 3 August, the workers went back, with the cut."
+ },
+ {
+  "t0": 561.1,
+  "t1": 564.42,
+  "text": "If profits came back within two years,"
+ },
+ {
+  "t0": 564.44,
+  "t1": 568.08,
+  "text": "they would get their lost wages back."
+ },
+ {
+  "t0": 568.58,
+  "t1": 573.93,
+  "text": "It was a hard summer. Then the plant went back to work."
+ },
+ {
+  "t0": 578.63,
+  "t1": 580.98,
+  "text": "During the Second World War,"
+ },
+ {
+  "t0": 581.0,
+  "t1": 584.45,
+  "text": "Maytag stopped making washers altogether,"
+ },
+ {
+  "t0": 584.47,
+  "t1": 588.09,
+  "text": "and built parts for military aircraft."
+ },
+ {
+  "t0": 588.59,
+  "t1": 592.93,
+  "text": "In 1949, a new plant opened in Newton:"
+ },
+ {
+  "t0": 592.95,
+  "t1": 599.42,
+  "text": "Plant 2, built for the first Maytag automatic washer."
+ },
+ {
+  "t0": 599.92,
+  "t1": 602.97,
+  "text": "In 1962, for the first time,"
+ },
+ {
+  "t0": 602.99,
+  "t1": 609.51,
+  "text": "the company was run by someone who was not named Maytag."
+ },
+ {
+  "t0": 610.01,
+  "t1": 616.45,
+  "text": "And in 1967, Maytag found the face it would wear for decades:"
+ },
+ {
+  "t0": 616.47,
+  "t1": 623.22,
+  "text": "a repairman with nothing to do, because Maytags never broke."
+ },
+ {
+  "t0": 623.72,
+  "t1": 628.03,
+  "text": "It was an advertisement. But in Newton, people believed it,"
+ },
+ {
+  "t0": 628.05,
+  "t1": 632.05,
+  "text": "because they were the ones building the machines."
+ },
+ {
+  "t0": 632.55,
+  "t1": 636.19,
+  "text": "Carl Repp worked at the plant for 30 years."
+ },
+ {
+  "t0": 636.21,
+  "t1": 641.72,
+  "text": "“We made good wages there, but we also made a good product.”"
+ },
+ {
+  "t0": 642.22,
+  "t1": 645.28,
+  "text": "“They call us the dependability people."
+ },
+ {
+  "t0": 645.3,
+  "t1": 650.6,
+  "text": "I mean, that was kind of the motto we went by for many years.”"
+ },
+ {
+  "t0": 651.1,
+  "t1": 656.99,
+  "text": "Maytag kept making the old wringer washers until 1983."
+ },
+ {
+  "t0": 657.01,
+  "t1": 662.56,
+  "text": "By then, Newton had built 11.7 million of them."
+ },
+ {
+  "t0": 663.06,
+  "t1": 668.8,
+  "text": "At its peak, Maytag employed more than 3,000 people in Newton."
+ },
+ {
+  "t0": 668.82,
+  "t1": 671.22,
+  "text": "In a town of about 15,000,"
+ },
+ {
+  "t0": 671.24,
+  "t1": 675.73,
+  "text": "that was more than one person in every five."
+ },
+ {
+  "t0": 676.23,
+  "t1": 679.99,
+  "text": "And it paid for things in town as well:"
+ },
+ {
+  "t0": 680.01,
+  "t1": 684.48,
+  "text": "parks, the aquatic center, the auditorium."
+ },
+ {
+  "t0": 684.98,
+  "t1": 688.24,
+  "text": "Families worked there for generations."
+ },
+ {
+  "t0": 688.26,
+  "t1": 691.95,
+  "text": "And there was a number everybody knew."
+ },
+ {
+  "t0": 692.45,
+  "t1": 696.56,
+  "text": "As a woman in Newton told a radio reporter:"
+ },
+ {
+  "t0": 696.58,
+  "t1": 701.87,
+  "text": "“At Maytag, it was 30 years and you got to retire.”"
+ },
+ {
+  "t0": 702.38,
+  "t1": 705.1,
+  "text": "Thirty years, and a pension,"
+ },
+ {
+  "t0": 705.12,
+  "t1": 709.8,
+  "text": "and full medical benefits. That was the promise."
+ },
+ {
+  "t0": 709.82,
+  "t1": 713.13,
+  "text": "That was what dependability meant,"
+ },
+ {
+  "t0": 713.15,
+  "t1": 716.58,
+  "text": "to the people inside the plant."
+ },
+ {
+  "t0": 721.28,
+  "t1": 727.33,
+  "text": "From the 1980s, Maytag grew by buying other companies."
+ },
+ {
+  "t0": 727.35,
+  "t1": 733.92,
+  "text": "Jenn-Air. Magic Chef. Hoover, the vacuum cleaner maker."
+ },
+ {
+  "t0": 734.42,
+  "t1": 739.0,
+  "text": "It was no longer a washing-machine company in a small town."
+ },
+ {
+  "t0": 739.02,
+  "t1": 741.72,
+  "text": "It was a big appliance company that"
+ },
+ {
+  "t0": 741.74,
+  "t1": 745.26,
+  "text": "happened to have its headquarters there."
+ },
+ {
+  "t0": 745.76,
+  "t1": 749.79,
+  "text": "And the appliance business was changing."
+ },
+ {
+  "t0": 749.81,
+  "t1": 755.37,
+  "text": "Some Newton workers were laid off as early as 2003."
+ },
+ {
+  "t0": 755.87,
+  "t1": 759.96,
+  "text": "In 2005, Maytag was put up for sale."
+ },
+ {
+  "t0": 759.98,
+  "t1": 764.88,
+  "text": "A private-equity group offered $14 a share."
+ },
+ {
+  "t0": 764.9,
+  "t1": 770.37,
+  "text": "Haier, the Chinese appliance giant, offered $16."
+ },
+ {
+  "t0": 770.39,
+  "t1": 776.09,
+  "text": "Whirlpool, the biggest appliance maker in America,"
+ },
+ {
+  "t0": 776.11,
+  "t1": 780.63,
+  "text": "raised its bid three times, and won."
+ },
+ {
+  "t0": 781.13,
+  "t1": 788.75,
+  "text": "On 31 March 2006, Whirlpool owned Maytag."
+ },
+ {
+  "t0": 789.25,
+  "t1": 791.69,
+  "text": "Six weeks later, on 10 May,"
+ },
+ {
+  "t0": 791.71,
+  "t1": 795.42,
+  "text": "it announced what would happen in Newton."
+ },
+ {
+  "t0": 795.44,
+  "t1": 799.89,
+  "text": "The plant would close. So would the headquarters."
+ },
+ {
+  "t0": 799.91,
+  "t1": 806.04,
+  "text": "Nearly 1,000 jobs in the factory, and about 900 in the offices."
+ },
+ {
+  "t0": 806.54,
+  "t1": 812.21,
+  "text": "The governor said the state had offered more than $100 million,"
+ },
+ {
+  "t0": 812.23,
+  "t1": 816.6,
+  "text": "and a new modern factory. It was not enough."
+ },
+ {
+  "t0": 817.1,
+  "t1": 820.91,
+  "text": "Whirlpool's spokesman explained it this way:"
+ },
+ {
+  "t0": 821.41,
+  "t1": 825.57,
+  "text": "“Now the fundamentals of the company had eroded."
+ },
+ {
+  "t0": 825.59,
+  "t1": 830.26,
+  "text": "They needed to be fixed. They were losing money.”"
+ },
+ {
+  "t0": 830.76,
+  "t1": 835.28,
+  "text": "The president of the union local saw it differently."
+ },
+ {
+  "t0": 835.3,
+  "t1": 839.21,
+  "text": "He called it part of a “widespread epidemic”:"
+ },
+ {
+  "t0": 839.23,
+  "t1": 844.6,
+  "text": "union jobs cut, and moved to places where they paid less."
+ },
+ {
+  "t0": 845.1,
+  "t1": 848.09,
+  "text": "Both of those things can be true."
+ },
+ {
+  "t0": 848.11,
+  "t1": 853.12,
+  "text": "The washers would still be made, in Ohio and in Mexico."
+ },
+ {
+  "t0": 853.14,
+  "t1": 857.01,
+  "text": "They just would not be made in Newton."
+ },
+ {
+  "t0": 857.51,
+  "t1": 861.78,
+  "text": "A line worker named Vicky had 22 years in."
+ },
+ {
+  "t0": 861.8,
+  "t1": 865.35,
+  "text": "“My aunt worked there for 30 years."
+ },
+ {
+  "t0": 865.37,
+  "t1": 868.83,
+  "text": "My grandfather retired from there."
+ },
+ {
+  "t0": 868.85,
+  "t1": 872.21,
+  "text": "It's sad. It's like a death.”"
+ },
+ {
+  "t0": 876.91,
+  "t1": 884.46,
+  "text": "Which brings us back to Thursday, 25 October 2007."
+ },
+ {
+  "t0": 884.96,
+  "t1": 888.74,
+  "text": "550 people were still on the line that day."
+ },
+ {
+  "t0": 888.76,
+  "t1": 894.12,
+  "text": "When it stopped, there were hugs and kisses at the gate."
+ },
+ {
+  "t0": 894.62,
+  "t1": 899.21,
+  "text": "Mark Wickliff was 49. He had worked there 26½ years,"
+ },
+ {
+  "t0": 899.23,
+  "t1": 904.78,
+  "text": "three and a half short of the 30 he needed for full retirement."
+ },
+ {
+  "t0": 904.8,
+  "t1": 909.39,
+  "text": "Four generations of his family had worked at Maytag."
+ },
+ {
+  "t0": 909.41,
+  "t1": 913.35,
+  "text": "He was the one who carried out the sign."
+ },
+ {
+  "t0": 913.85,
+  "t1": 919.38,
+  "text": "“It's just close enough to look for another job.”"
+ },
+ {
+  "t0": 919.88,
+  "t1": 923.32,
+  "text": "Mike Jackson had 18 years in."
+ },
+ {
+  "t0": 923.34,
+  "t1": 929.83,
+  "text": "“I'm numb, I'm scared. I'll be all right, I think.”"
+ },
+ {
+  "t0": 930.33,
+  "t1": 933.62,
+  "text": "Someone hung a plaque on the fence,"
+ },
+ {
+  "t0": 933.64,
+  "t1": 936.36,
+  "text": "in the shape of a gravestone."
+ },
+ {
+  "t0": 936.38,
+  "t1": 939.38,
+  "text": "It said “R.I.P.” And underneath,"
+ },
+ {
+  "t0": 939.4,
+  "t1": 942.92,
+  "text": "in handwriting: “I love you all.”"
+ },
+ {
+  "t0": 943.42,
+  "t1": 948.84,
+  "text": "Mindy Pollock had been there 22 years when she was let go."
+ },
+ {
+  "t0": 948.86,
+  "t1": 952.82,
+  "text": "“I've seen grown men crying that day.”"
+ },
+ {
+  "t0": 953.32,
+  "t1": 957.86,
+  "text": "Jim Schutte, a machine repairman for 21 years,"
+ },
+ {
+  "t0": 957.88,
+  "t1": 963.51,
+  "text": "knew the day he would have reached his thirty: 17 August."
+ },
+ {
+  "t0": 963.53,
+  "t1": 966.97,
+  "text": "When would he retire now? “Probably"
+ },
+ {
+  "t0": 966.99,
+  "t1": 970.27,
+  "text": "never,” he said, and laughed."
+ },
+ {
+  "t0": 970.77,
+  "t1": 978.31,
+  "text": "In all, about 1,800 people in Newton lost their Maytag jobs."
+ },
+ {
+  "t0": 978.81,
+  "t1": 980.66,
+  "text": "A town of 15,000."
+ },
+ {
+  "t0": 980.68,
+  "t1": 987.56,
+  "text": "And the company that had been there for 114 years was gone."
+ },
+ {
+  "t0": 992.26,
+  "t1": 996.37,
+  "text": "Unemployment climbed to almost 10%."
+ },
+ {
+  "t0": 996.39,
+  "t1": 1002.99,
+  "text": "In 2010, Jasper County had the highest unemployment rate"
+ },
+ {
+  "t0": 1003.01,
+  "t1": 1006.6,
+  "text": "of all 99 counties in Iowa."
+ },
+ {
+  "t0": 1007.1,
+  "t1": 1010.08,
+  "text": "A national news program came to town,"
+ },
+ {
+  "t0": 1010.1,
+  "t1": 1012.76,
+  "text": "and said it had seen nothing that"
+ },
+ {
+  "t0": 1012.78,
+  "t1": 1016.03,
+  "text": "looked “quite as broken as Newton”."
+ },
+ {
+  "t0": 1016.53,
+  "t1": 1019.04,
+  "text": "But the plant was still standing."
+ },
+ {
+  "t0": 1019.06,
+  "t1": 1023.92,
+  "text": "And so were the people who knew how to build things in it."
+ },
+ {
+  "t0": 1024.42,
+  "t1": 1029.54,
+  "text": "Before anyone could use the site, it had to be cleaned."
+ },
+ {
+  "t0": 1029.56,
+  "t1": 1034.79,
+  "text": "Whirlpool took on the job, removing soil and groundwater"
+ },
+ {
+  "t0": 1034.81,
+  "t1": 1038.53,
+  "text": "contaminated with chromium and solvents."
+ },
+ {
+  "t0": 1038.55,
+  "t1": 1041.76,
+  "text": "By 2008, 154 acres were ready."
+ },
+ {
+  "t0": 1042.26,
+  "t1": 1047.7,
+  "text": "A company called TPI wanted to build wind-turbine blades"
+ },
+ {
+  "t0": 1047.72,
+  "t1": 1053.46,
+  "text": "in the old Maytag buildings. The blades were 140 feet long."
+ },
+ {
+  "t0": 1053.48,
+  "t1": 1056.29,
+  "text": "The buildings were too short."
+ },
+ {
+  "t0": 1056.31,
+  "t1": 1061.58,
+  "text": "So in 2008, a new plant went up in Newton instead."
+ },
+ {
+  "t0": 1062.09,
+  "t1": 1065.27,
+  "text": "Inside the old factory, another company"
+ },
+ {
+  "t0": 1065.29,
+  "t1": 1068.89,
+  "text": "began making steel towers for wind turbines."
+ },
+ {
+  "t0": 1068.91,
+  "t1": 1071.69,
+  "text": "The first tower section rolled out"
+ },
+ {
+  "t0": 1071.71,
+  "t1": 1074.48,
+  "text": "of a building that, a year before,"
+ },
+ {
+  "t0": 1074.5,
+  "t1": 1078.35,
+  "text": "had been making Maytag washers and dryers."
+ },
+ {
+  "t0": 1078.86,
+  "t1": 1083.02,
+  "text": "In April 2009, the President came to see it."
+ },
+ {
+  "t0": 1083.04,
+  "t1": 1087.63,
+  "text": "He described what the workers had shown him."
+ },
+ {
+  "t0": 1088.13,
+  "t1": 1090.77,
+  "text": "“These floors were dark and silent."
+ },
+ {
+  "t0": 1090.79,
+  "t1": 1093.29,
+  "text": "The only signs of a once thriving"
+ },
+ {
+  "t0": 1093.31,
+  "t1": 1095.96,
+  "text": "enterprise were the cement markings"
+ },
+ {
+  "t0": 1095.98,
+  "t1": 1098.62,
+  "text": "where the equipment had been before"
+ },
+ {
+  "t0": 1098.64,
+  "t1": 1101.79,
+  "text": "they were boxed up and carted away.”"
+ },
+ {
+  "t0": 1102.29,
+  "t1": 1106.2,
+  "text": "TPI grew to more than 1,100 workers."
+ },
+ {
+  "t0": 1106.22,
+  "t1": 1109.47,
+  "text": "Many had come from Maytag."
+ },
+ {
+  "t0": 1109.97,
+  "t1": 1115.84,
+  "text": "But the new jobs did not pay what the old ones had."
+ },
+ {
+  "t0": 1115.86,
+  "t1": 1120.12,
+  "text": "In 2001, factory pay in Jasper County"
+ },
+ {
+  "t0": 1120.14,
+  "t1": 1123.71,
+  "text": "was 37% above the Iowa average."
+ },
+ {
+  "t0": 1123.73,
+  "t1": 1127.83,
+  "text": "By 2015, it was about 20% below."
+ },
+ {
+  "t0": 1128.33,
+  "t1": 1131.49,
+  "text": "A waitress in town, with 30 years at"
+ },
+ {
+  "t0": 1131.51,
+  "t1": 1134.41,
+  "text": "Maytag behind her, put it simply:"
+ },
+ {
+  "t0": 1134.43,
+  "t1": 1139.72,
+  "text": "“You can't take the good paying jobs that they had out there"
+ },
+ {
+  "t0": 1139.74,
+  "t1": 1143.32,
+  "text": "and replace them with half the pay.”"
+ },
+ {
+  "t0": 1143.82,
+  "t1": 1148.63,
+  "text": "And in 2021, the blade plant closed as well,"
+ },
+ {
+  "t0": 1148.65,
+  "t1": 1153.13,
+  "text": "when its biggest customer stopped buying."
+ },
+ {
+  "t0": 1153.15,
+  "t1": 1156.51,
+  "text": "710 people lost their jobs."
+ },
+ {
+  "t0": 1157.01,
+  "t1": 1162.24,
+  "text": "In the summer of 2025, it opened its doors again,"
+ },
+ {
+  "t0": 1162.26,
+  "t1": 1165.13,
+  "text": "under a new ten-year lease,"
+ },
+ {
+  "t0": 1165.15,
+  "t1": 1170.15,
+  "text": "even as TPI itself went through bankruptcy."
+ },
+ {
+  "t0": 1170.65,
+  "t1": 1173.58,
+  "text": "Other things came. A race track,"
+ },
+ {
+  "t0": 1173.6,
+  "t1": 1177.27,
+  "text": "Iowa Speedway, opened in Newton in 2006."
+ },
+ {
+  "t0": 1177.29,
+  "t1": 1182.8,
+  "text": "In 2024, NASCAR's top series raced there for the first time."
+ },
+ {
+  "t0": 1182.82,
+  "t1": 1185.94,
+  "text": "The Maytag headquarters campus was"
+ },
+ {
+  "t0": 1185.96,
+  "t1": 1189.53,
+  "text": "given to the community college in 2016."
+ },
+ {
+  "t0": 1189.55,
+  "t1": 1194.7,
+  "text": "And on a farm just outside town, the founder's grandsons"
+ },
+ {
+  "t0": 1194.72,
+  "t1": 1198.48,
+  "text": "had been making a blue cheese since 1941."
+ },
+ {
+  "t0": 1198.5,
+  "t1": 1201.94,
+  "text": "It still carries the Maytag name."
+ },
+ {
+  "t0": 1202.44,
+  "t1": 1207.09,
+  "text": "Here is the part that surprised people."
+ },
+ {
+  "t0": 1207.11,
+  "t1": 1210.08,
+  "text": "Newton did not empty out."
+ },
+ {
+  "t0": 1210.1,
+  "t1": 1214.39,
+  "text": "In 1960, it had about 15,000 people."
+ },
+ {
+  "t0": 1214.41,
+  "t1": 1219.0,
+  "text": "In 2020, it still had about 15,000."
+ },
+ {
+  "t0": 1219.5,
+  "t1": 1223.36,
+  "text": "The square looks much as it did in 1907."
+ },
+ {
+  "t0": 1223.38,
+  "t1": 1228.92,
+  "text": "The courthouse, the shops, and no boarded-up windows."
+ },
+ {
+  "t0": 1229.42,
+  "t1": 1232.74,
+  "text": "For decades, America was told about a"
+ },
+ {
+  "t0": 1232.76,
+  "t1": 1236.17,
+  "text": "repairman who sat with nothing to fix,"
+ },
+ {
+  "t0": 1236.19,
+  "t1": 1240.65,
+  "text": "because the machines from Newton never broke."
+ },
+ {
+  "t0": 1241.15,
+  "t1": 1246.01,
+  "text": "Newton built those machines to last, and many of them did."
+ },
+ {
+  "t0": 1246.03,
+  "t1": 1249.37,
+  "text": "What changed was everything around them."
+ },
+ {
+  "t0": 1249.39,
+  "t1": 1253.74,
+  "text": "Who owned the company. Where the machines were made."
+ },
+ {
+  "t0": 1253.76,
+  "t1": 1256.51,
+  "text": "And what a factory job paid."
+ },
+ {
+  "t0": 1257.01,
+  "t1": 1260.14,
+  "text": "What stayed was the town."
+ },
+ {
+  "t0": 1260.64,
+  "t1": 1265.6,
+  "text": "Did you, or someone in your family, work at Maytag?"
+ },
+ {
+  "t0": 1265.62,
+  "t1": 1270.2,
+  "text": "Or do you still have a Maytag that never broke?"
+ },
+ {
+  "t0": 1270.22,
+  "t1": 1274.82,
+  "text": "Tell us in the comments. We read every one."
+ },
+ {
+  "t0": 1275.32,
+  "t1": 1278.76,
+  "text": "Next week: Flint, Michigan."
+ }
+]

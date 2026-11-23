@@ -1,0 +1,12 @@
+*.mp4
+PERMISSIONS.md
+__pycache__/
+audio/vo/*.download
+audio/vo/*.wav
+out/
+raw/
+research/
+research/dl/
+stills/
+tools/pylib/
+voice-test/

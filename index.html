@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>What Happened to Newton, Iowa?</title>
+<style>
+@font-face{font-family:Sans;src:url(fonts/sans400.woff2) format('woff2');font-weight:400}
+@font-face{font-family:Sans;src:url(fonts/sans500.woff2) format('woff2');font-weight:500}
+@font-face{font-family:Sans;src:url(fonts/sans700.woff2) format('woff2');font-weight:700}
+@font-face{font-family:Mono;src:url(fonts/mono400.woff2) format('woff2');font-weight:400}
+@font-face{font-family:Mono;src:url(fonts/mono600.woff2) format('woff2');font-weight:600}
+@font-face{font-family:SerifI;src:url(fonts/serifi.woff2) format('woff2');font-style:italic;font-weight:400}
+html,body{margin:0;background:#15110D;overflow:hidden}canvas{display:block}
+</style></head><body><canvas id="c" width="1920" height="1080"></canvas>
+<script>
+// "What Happened to Newton, Iowa?" — warm archive investigation (sepia archive layer, big pictures, people, 47 px captions).
+// Data-driven: film.json holds every scene (type + params + t0/t1 + vd = narration length), the voice starts and the subtitles.
+// render(t) is deterministic.
+const W = 1920, H = 1080, cv = document.getElementById('c'), x = cv.getContext('2d');
+const C = { bg:'#15110D', panel:'#221C16', line:'#3B3229', text:'#F1E7D3', dim:'#AE9F86', faint:'#62564A', acc:'#E5512F', paper:'#EADFC6', ink:'#2A2118' };
+const F = { sans:'Sans', mono:'Mono', it:'SerifI' };
+let FILM, SC = [], SUBS = [], FR = 0, REC = null; const IM = {}; let GRAIN = [];
+const clamp = (v, a = 0, b = 1) => Math.max(a, Math.min(b, v)), seg = (t, a, b) => clamp((t - a) / (b - a)), lerp = (a, b, k) => a + (b - a) * k;
+const eo = k => 1 - Math.pow(1 - k, 3), eio = k => k < .5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2;
+function rnd(s) { return () => { s |= 0; s = s + 0x6D2B79F5 | 0; let t = Math.imul(s ^ s >>> 15, 1 | s); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+function load(src) { return new Promise(r => { const i = new Image(); i.onload = () => r(i); i.onerror = () => { console.warn('missing', src); r(null); }; i.src = src; }); }
+const AT = (s, v) => v == null ? s.t0 + .4 : v < 0 ? s.t0 + (-v) * (s.vd || (s.t1 - s.t0)) : s.t0 + v;   // seconds, or a fraction of the line
+async function boot() {
+  FILM = await (await fetch('film.json')).json(); SC = FILM.scenes; SUBS = FILM.subs; window.DUR = FILM.dur;
+  const names = new Set(['hq2005', 'sanborn1918_maytag', 'pano1907', 'square2014_court', 'wringer', 'fl_maytag_1935', 'mural2017']);
+  SC.forEach(s => { ['img', 'a', 'b'].forEach(k => typeof s[k] === 'string' && names.add(s[k])); (s.items || []).forEach(i => typeof i[0] === 'string' && /^[a-z]/.test(i[0]) && names.add(i[0])); });
+  const L = [...names].map(n => load(`assets/${n}.jpg`).then(i => IM[n] = i));
+  for (const f of ['700 40px Sans', '500 20px Sans', '400 20px Sans', '400 20px Mono', '600 20px Mono', 'italic 24px SerifI']) L.push(document.fonts.load(f));
+  await Promise.all(L);
+  for (let g = 0; g < 6; g++) { const c = document.createElement('canvas'); c.width = c.height = 256; const gx = c.getContext('2d'), d = gx.createImageData(256, 256), r = rnd(g * 99 + 7);
+    for (let i = 0; i < d.data.length; i += 4) { const v = 128 + (r() + r() + r() - 1.5) * 120; d.data[i] = d.data[i + 1] = d.data[i + 2] = v; d.data[i + 3] = 255; } gx.putImageData(d, 0, 0); GRAIN.push(c); }
+  window.READY = true;
+}
+// ── primitives ──
+function txt(s, X, Y, o = {}) {
+  x.save(); x.font = `${o.it ? 'italic ' : ''}${o.w || 400} ${o.s || 24}px ${o.f || F.sans}`; x.fillStyle = o.c || C.text; x.globalAlpha *= (o.a ?? 1);
+  x.textAlign = o.al || 'left'; x.letterSpacing = (o.ls || 0) + 'px'; if (o.sh) { x.shadowColor = 'rgba(0,0,0,.9)'; x.shadowBlur = o.sh; }
+  if (x.globalAlpha > .001) x.fillText(s, X, Y); const w = x.measureText(s).width, ga = x.globalAlpha; x.restore();
+  if (REC && o.id && ga > .5) { const sz = o.s || 24, x0 = o.al === 'right' ? X - w : o.al === 'center' ? X - w / 2 : X; REC.push({ id: o.id, text: s, x0, y0: Y - sz * .9, x1: x0 + w, y1: Y + sz * .25 }); }
+  return w;
+}
+function tw(s, o = {}) { x.save(); x.font = `${o.it ? 'italic ' : ''}${o.w || 400} ${o.s || 24}px ${o.f || F.sans}`; x.letterSpacing = (o.ls || 0) + 'px'; const w = x.measureText(s).width; x.restore(); return w; }
+function hair(x0, y0, x1, y1, c = C.line, w = 1, dash) { x.save(); x.strokeStyle = c; x.lineWidth = w; if (dash) x.setLineDash(dash); x.beginPath(); x.moveTo(x0, y0); x.lineTo(x1, y1); x.stroke(); x.restore(); }
+function rect(X, Y, w, h, c = C.line, lw = 1) { x.save(); x.strokeStyle = c; x.lineWidth = lw; x.strokeRect(X + .5, Y + .5, w - 1, h - 1); x.restore(); }
+function fill(X, Y, w, h, c) { x.fillStyle = c; x.fillRect(X, Y, w, h); }
+function shade(X, Y, w, h, a) { x.save(); x.globalAlpha *= a; fill(X, Y, w, h, C.bg); x.restore(); }
+const PAPERY = img => /sanborn|patent|ad1|ad_|birdseye|ww1/.test(img.src || '');   // white paper scans: pressed down to warm tan, never a blank white panel
+function plate(img, sx, sy, sw, sh, X, Y, w, h, o = {}) {
+  x.save(); x.globalAlpha *= (o.a ?? 1); fill(X, Y, w, h, '#000');
+  if (img) { x.filter = o.colour ? 'sepia(.3) saturate(.8) contrast(1.05)' : PAPERY(img) ? 'grayscale(1) sepia(.85) contrast(1.15) brightness(.86)' : 'grayscale(1) sepia(.6) contrast(1.1) brightness(.97)'; x.drawImage(img, sx, sy, sw, sh, X, Y, w, h); x.filter = 'none';
+    if (!o.colour && PAPERY(img)) { x.save(); x.globalCompositeOperation = 'multiply'; x.globalAlpha *= .6; fill(X, Y, w, h, '#C9A06A'); x.restore(); } }
+  if (GRAIN.length) { x.beginPath(); x.rect(X, Y, w, h); x.clip(); x.globalCompositeOperation = 'overlay'; x.globalAlpha *= o.colour ? .12 : .2; const g = GRAIN[FR % 6];
+    for (let gy = Y; gy < Y + h; gy += 256) for (let gx = X; gx < X + w; gx += 256) x.drawImage(g, gx, gy); }
+  x.restore(); if (o.flash > 0) { x.save(); x.globalAlpha = o.flash * .9; fill(X, Y, w, h, '#fff'); x.restore(); }
+  x.save(); x.globalAlpha *= (o.a ?? 1); rect(X, Y, w, h, o.border || C.line, o.bw || 1); x.restore();
+}
+function cover(img, X, Y, w, h, o = {}, fx = .5, fy = .5, R = null, z = 1) {
+  if (!img) { plate(null, 0, 0, 1, 1, X, Y, w, h, o); return () => [X, Y]; }
+  const r0 = R || [0, 0, img.width, img.height]; let sw = r0[2], sh = sw * h / w; if (sh > r0[3]) { sh = r0[3]; sw = sh * w / h; }
+  sw /= z; sh /= z; const sx = r0[0] + (r0[2] - sw) * fx, sy = r0[1] + (r0[3] - sh) * fy; plate(img, sx, sy, sw, sh, X, Y, w, h, o); const k = w / sw;
+  return (px, py) => [X + (px - sx) * k, Y + (py - sy) * k];
+}
+function ring(cx, cy, r, k, label, side = 1, id) {
+  if (k <= 0) return; x.save(); x.strokeStyle = C.acc; x.lineWidth = 3.5; x.beginPath(); x.arc(cx, cy, r, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * eo(k)); x.stroke(); x.restore();
+  if (label && k > .6) { const a = seg(k, .6, .75), lx = cx + side * r * .72, ly = cy - r * .72, ex = lx + side * 46, ey = ly - 36;
+    x.save(); x.globalAlpha *= a; hair(lx, ly, ex, ey, C.acc, 2); hair(ex, ey, ex + side * 16, ey, C.acc, 2); x.restore();
+    const w = tw(label, { s: 30, w: 700 }), bx = side > 0 ? ex + 20 : ex - 28 - w; shade(bx - 4, ey - 26, w + 16, 46, .8 * a);
+    txt(label, ex + side * 24, ey + 9, { s: 30, w: 700, al: side > 0 ? 'left' : 'right', a, sh: 10, id }); }
+}
+function tag(s, X, Y, o = {}) { const w = txt(s, X + 14, Y, { s: 17, f: F.mono, w: 600, ls: 1, c: o.c || C.text, a: o.a ?? 1, id: o.id }); x.save(); x.globalAlpha *= o.a ?? 1; fill(X, Y - 12, 6, 13, o.chip || C.text); x.restore(); return w; }
+function dateBox(s, X, Y, a = 1) { const w = tw(s, { s: 44, f: F.mono, w: 600 }); shade(X - w - 40, Y, w + 40, 76, .86 * a); txt(s, X - 20, Y + 54, { s: 44, f: F.mono, w: 600, c: C.acc, al: 'right', a, id: 'date' + s }); }
+function nameBox(name, role, X, Y, a = 1) { const w = Math.max(tw(name, { s: 46, w: 700 }), tw(role, { s: 19, f: F.mono })) + 64; shade(X, Y, w, 116, .88 * a);
+  x.save(); x.globalAlpha *= a; fill(X + 18, Y + 16, 6, 84, C.acc); x.restore(); txt(name, X + 40, Y + 62, { s: 46, w: 700, a, id: 'nm' + name.length }); txt(role, X + 42, Y + 96, { s: 19, f: F.mono, c: C.dim, a, id: 'nr' + role.length }); }
+function flashK(t, s, d = .14) { return 1 - seg(t, s.t0, s.t0 + d); }
+const K = (t, s) => (t - s.t0) / Math.max(.01, s.t1 - s.t0);
+function paperCard(X, Y, w, h) { fill(X, Y, w, h, C.paper); x.save(); x.globalAlpha = .1; x.globalCompositeOperation = 'multiply'; for (let gy = Y; gy < Y + h; gy += 256) for (let gx = X; gx < X + w; gx += 256) x.drawImage(GRAIN[FR % 6], gx, gy); x.restore(); rect(X, Y, w, h, '#c9bb9c'); }
+function smallPlate(im, s, t, colour) {   // a low-resolution photo, shown no larger than ≈ 1.75× its pixels, centred
+  const w = Math.min(1500, im.width * 1.75), h = Math.min(860, w * im.height / im.width), ww = h * im.width / im.height, X = (W - ww) / 2, Y = 60 + (860 - h) / 2;
+  cover(im, X, Y, ww, h, { flash: flashK(t, s), colour }, .5, .5, null, lerp(1, 1.04, K(t, s))); return [X, Y, ww, h];
+}
+// ── scene types ──
+function sPhoto(t, s) {
+  const z = s.z ? lerp(s.z[0], s.z[1], eio(K(t, s))) : 1, im = IM[s.img];
+  if (s.small) { const [X, Y, w, h] = smallPlate(im, s, t, s.colour); tag(s.tag, X, Y - 14, { id: 'tg' }); if (s.date) dateBox(s.date, X + w, Y + h - 76, seg(t, s.t0 + .2, s.t0 + .3));
+    if (s.name) nameBox(s.name, s.role, X, Y + h - 116, seg(t, s.t0 + .4, s.t0 + .5)); return; }
+  const fy = s.fy2 != null ? lerp(s.fy ?? .5, s.fy2, eio(seg(t, AT(s, -.3), AT(s, -.52)))) : s.fy ?? .5;   // optional pan down/up the sheet
+  const mp = cover(im, 60, 60, 1800, 860, { flash: flashK(t, s), colour: s.colour }, s.fx ?? .5, fy, null, z);
+  tag(s.tag, 60, 46, { id: 'tg' });
+  (s.rings || []).forEach((rg, i) => { const [px, py, r, lab, at] = rg, [cx, cy] = mp(px, py), a0 = AT(s, at), k = seg(t, a0, a0 + .5);
+    ring(cx, cy, r * (mp(px + 1, py)[0] - cx), k, lab, cx > 1250 ? -1 : 1, 'rg' + i); });
+  if (s.date) dateBox(s.date, 1860, 60, seg(t, s.t0 + .2, s.t0 + .3));
+  if (s.name) nameBox(s.name, s.role, 60, 790, seg(t, s.t0 + .4, s.t0 + .5));
+}
+function sStat(t, s) {
+  const im = IM[s.img]; cover(im, 60, 60, 1120, 860, { flash: flashK(t, s), colour: s.colour }, .5, .5, null, lerp(1, 1.06, K(t, s))); tag(s.tag, 60, 46, { id: 'tg' });
+  const a0 = AT(s, s.at), k = seg(t, a0, a0 + .06); if (k <= 0) return;
+  const n = s.num.length, sz = n > 8 ? 104 : n > 6 ? 124 : n > 5 ? 150 : 190;
+  txt(s.num, 1230, 520, { s: sz, f: F.mono, w: 600, c: C.acc, a: k, id: 'num' });
+  const words = s.label.split(' '), lines = [''];   // wrap the label at ≈ 600 px
+  for (const w of words) { const tl = lines[lines.length - 1] ? lines[lines.length - 1] + ' ' + w : w; if (tw(tl, { s: 32 }) > 610 && lines[lines.length - 1]) lines.push(w); else lines[lines.length - 1] = tl; }
+  lines.forEach((l, i) => txt(l, 1236, 590 + i * 44, { s: 32, c: C.text, a: k, id: 'lab' + i }));
+}
+function sCard(t, s) {
+  const im = IM[s.img];
+  if (s.portrait) { cover(im, 60, 60, 640, 860, { flash: flashK(t, s), colour: 1 }, .5, .3); tag(s.tag, 60, 46, { id: 'tg' });
+    const k = seg(t, s.t0 + .3, s.t0 + .4), big = tw(s.name, { s: 84, w: 700 }) > 1080 ? 66 : 84;
+    txt(s.name, 760, 470, { s: big, w: 700, a: k, id: 'cn' }); txt(s.sub, 764, 524, { s: 24, f: F.mono, c: C.dim, a: k, id: 'cl' });
+    if (s.date) txt(s.date, 760, 690, { s: 120, f: F.mono, w: 600, c: C.acc, a: seg(t, s.t0 + .6, s.t0 + .7), id: 'cd' }); return; }
+  cover(im, 60, 60, 820, 860, { flash: flashK(t, s), colour: s.colour }, s.fx ?? .45, s.fy ?? .6, null, lerp(1.1, 1.2, K(t, s))); tag(s.imgTag, 60, 46, { id: 'tg' });
+  const k = seg(t, s.t0 + .3, s.t0 + .4); x.save(); x.globalAlpha = k; paperCard(920, 60, 940, 860); x.restore();
+  tag(s.tag, 920, 46, { a: k, id: 'tg2' }); txt(s.name, 980, 400, { s: 92, w: 700, c: C.ink, a: k, id: 'cn' });
+  s.lines.forEach((l, i) => txt(l, 984, 490 + i * 60, { s: 34, c: '#5a4b3a', a: seg(t, s.t0 + .6 + i * .5, s.t0 + .7 + i * .5), id: 'cl' + i }));
+  if (s.date) txt(s.date, 984, 260, { s: 72, f: F.mono, w: 600, c: C.acc, a: k, id: 'cd' });
+}
+function sQuote(t, s) {
+  const b = AT(s, s.at ?? 0);
+  if (t < b) { cover(IM[s.img], 60, 60, 1800, 860, { flash: flashK(t, s), colour: s.colour }, s.fx ?? .5, s.fy ?? .45, null, lerp(1, 1.08, seg(t, s.t0, b))); if (s.imgTag) tag(s.imgTag, 60, 46, { id: 'qimg' }); return; }
+  cover(IM[s.img], 60, 60, 760, 860, { flash: s.at ? 1 - seg(t, b, b + .14) : flashK(t, s), colour: s.colour }, s.fx ?? .5, s.fy ?? (s.portrait ? .3 : .45), null, lerp(1.05, 1.12, K(t, s)));
+  if (s.imgTag) tag(s.imgTag, 60, 46, { id: 'qimg' });
+  const k = seg(t, b + .1, b + .15); x.save(); x.globalAlpha = k; paperCard(860, 60, 1000, 860); x.restore();
+  const n = s.q.length, LH = 104, y0 = 60 + (860 - (n - 1) * LH) / 2 - 20, sz = Math.max(...s.q.map(q => tw(q, { s: 70, f: F.it, it: 1 }))) > 880 ? 58 : 70;
+  s.q.forEach((q, i) => txt(q, 920, y0 + i * LH, { s: sz, f: F.it, it: 1, c: C.ink, a: seg(t, b + .2 + i * .15, b + .3 + i * .15), id: 'q' + i }));
+  tag(s.who, 860, 950, { a: k, id: 'qw' });
+}
+function sPano(t, s) {   // slow pan across a wide panorama at full panel height
+  const im = IM[s.img], h = 860, w = h * im.width / im.height, a = s.from_ ?? 0, b = s.to ?? 1, p = lerp(a, b, eio(K(t, s)));
+  const sw = im.width * 1800 / w, sx = (im.width - sw) * p;
+  plate(im, sx, 0, sw, im.height, 60, 60, 1800, 860, { flash: flashK(t, s) }); tag(s.tag, 60, 46, { id: 'tg' });
+  if (s.date) dateBox(s.date, 1860, 60, seg(t, s.t0 + .2, s.t0 + .3));
+}
+function sLedger(t, s) {
+  cover(IM[s.img], 60, 60, 760, 860, { flash: flashK(t, s), colour: 1 }, .5, .5, null, lerp(1.1, 1.2, K(t, s))); tag(s.imgTag, 60, 46, { id: 'tg' });
+  txt(s.title, 900, 160, { s: 26, f: F.mono, w: 600, c: C.dim, ls: 2, id: 'lh' });
+  s.items.forEach(([v, l], i) => { const a0 = s.t0 + .2 + i * (s.vd || 6) * .28, k = seg(t, a0, a0 + .06); if (k <= 0) return; const Y = 340 + i * 220;
+    txt(v, 900, Y, { s: 110, f: F.mono, w: 600, c: C.acc, a: k, id: 'lv' + i }); txt(l, v.length > 2 ? 906 : 1080, v.length > 2 ? Y + 50 : Y - 18, { s: 44, a: k, id: 'll' + i }); });
+}
+const BOARD = [['9 MAY', 'Strike begins', 'workers stay at their machines'], ['10 JUNE', 'Injunction', 'against the pickets'], ['23 JUNE', 'Plant taken over', 'five foremen held for a week'],
+  ['21 JULY', 'National Guard', 'martial law · 34 hurt that night'], ['3 AUG', 'Back to work', 'with the 10% cut']];
+function sBoard(t, s) {
+  cover(IM.sanborn1918_maytag, 60, 60, 1800, 470, {}, .4, .72, null, lerp(1.4, 1.46, K(t, s))); tag('THE 1938 STRIKE · UE LOCAL 1116 · MAYTAG, NEWTON', 60, 46, { id: 'bt' });
+  const X0 = 240, step = 360, Y = 660; hair(X0 - 120, Y, X0 + 4 * step + 120, Y, C.line, 2);
+  BOARD.forEach(([d, a, b], i) => { if (i > s.upto) return; const a0 = i === s.upto && !s.hold ? s.t0 + .3 : 0, k = seg(t, a0, a0 + .1), X = X0 + i * step;
+    x.save(); x.globalAlpha = k; x.fillStyle = i === 3 ? C.acc : C.text; x.beginPath(); x.arc(X, Y, 13, 0, 7); x.fill(); x.restore();
+    txt(d, X, Y - 34, { s: 46, f: F.mono, w: 600, c: C.acc, al: 'center', a: k, id: 'bd' + i });
+    txt(a, X, Y + 68, { s: 34, w: 700, al: 'center', a: k, id: 'ba' + i });
+    b.split(' · ').forEach((p, j) => txt(p, X, Y + 108 + j * 34, { s: 23, c: C.dim, al: 'center', a: k, id: 'bb' + i + j })); });
+  txt('1938', 1860, 600, { s: 44, f: F.mono, w: 600, c: C.acc, al: 'right', id: 'by' });
+}
+const CHAIN = [['1982', 'Jenn-Air', 'bought'], ['1986', 'Magic Chef', 'merged in'], ['1989', 'Hoover', 'bought'], ['2005', 'Maytag for sale', 'three bidders'], ['31 MAR 2006', 'Whirlpool', 'owns Maytag']];
+function sChain(t, s) {
+  if (s.upto === 2 && !s.hold && t < AT(s, -.42)) { cover(IM.hq2005, 60, 60, 1800, 860, { flash: flashK(t, s), colour: 1 }, .5, .5, null, lerp(1, 1.06, seg(t, s.t0, AT(s, -.42)))); tag(HQT, 60, 46, { id: 'cimg' }); return; }
+  cover(IM.hq2005, 60, 60, 820, 860, { colour: 1 }, .5, .5, null, lerp(1.0, 1.06, K(t, s))); tag(HQT, 60, 46, { id: 'cimg' }); tag('MAYTAG, FROM BUYER TO BOUGHT', 920, 46, { id: 'ct' });
+  CHAIN.forEach(([y, a, note], i) => { if (i > s.upto) return;
+    const a0 = s.hold ? 0 : s.upto === 2 ? AT(s, -(.42 + i * .13)) : i === s.upto ? s.t0 + .3 : 0, k = seg(t, a0, a0 + .1), X = 920, Y = 60 + i * 172, w = 940, h = 150;
+    x.save(); x.globalAlpha = k; fill(X, Y, w, h, i === 4 ? 'rgba(229,81,47,.14)' : C.panel); rect(X, Y, w, h, i === 4 ? C.acc : C.line, 1.5); x.restore();
+    txt(y, X + 30, Y + 70, { s: y.length > 5 ? 34 : 46, f: F.mono, w: 600, c: C.acc, a: k, id: 'cy' + i }); txt(a, X + 330, Y + 68, { s: 44, w: 700, a: k, id: 'ca' + i });
+    txt(note, X + 332, Y + 112, { s: 24, c: C.dim, a: k, id: 'cn' + i }); if (i > 0) hair(X + 60, Y - 22, X + 60, Y, C.dim, 2); });
+}
+const HQT = 'MAYTAG HEADQUARTERS, NEWTON · 2005';
+function sBids(t, s) {
+  cover(IM.square2014_b, 60, 60, 1800, 400, { flash: flashK(t, s), colour: 1 }, .5, .5, null, lerp(1.0, 1.05, K(t, s))); tag('NEWTON · DAVID WILSON, 2014 (CC BY 2.0)', 60, 46, { id: 'bt' }); tag('MAYTAG FOR SALE · 2005 · OFFERS PER SHARE', 60, 486, { id: 'bt2' });
+  const B = [['$14', 'Ripplewood', 'private-equity group', .2], ['$16', 'Haier', 'Chinese appliance maker', .38], ['raised 3×', 'Whirlpool', 'biggest U.S. appliance maker · won', .62]];
+  B.forEach(([p, n, d, f], i) => { const k = seg(t, AT(s, -f), AT(s, -f) + .1), X = 60 + i * 610, w = 580; if (k <= 0) return;
+    x.save(); x.globalAlpha = k; fill(X, 500, w, 420, i === 2 ? 'rgba(229,81,47,.14)' : C.panel); rect(X, 500, w, 420, i === 2 ? C.acc : C.line, 1.5); x.restore();
+    txt(p, X + 40, 640, { s: p.length > 4 ? 78 : 110, f: F.mono, w: 600, c: C.acc, a: k, id: 'bp' + i }); txt(n, X + 42, 740, { s: 52, w: 700, a: k, id: 'bn' + i });
+    txt(d, X + 44, 800, { s: 25, c: C.dim, a: k, id: 'bdd' + i }); });
+}
+function sSplit(t, s) {
+  cover(IM.newton_tower, 60, 60, 1800, 860, { flash: flashK(t, s), colour: 1 }, .5, .4, null, lerp(1, 1.05, K(t, s))); shade(60, 60, 1800, 860, .72); tag(s.tag, 60, 46, { id: 'tg' });
+  const k1 = seg(t, AT(s, -.45), AT(s, -.45) + .08), k2 = seg(t, AT(s, -.62), AT(s, -.62) + .08);
+  txt(s.date, W / 2, 230, { s: 52, f: F.mono, w: 600, c: C.acc, al: 'center', ls: 4, id: 'sd' });
+  txt(s.a[0], 520, 560, { s: 150, f: F.mono, w: 600, c: C.acc, al: 'center', a: k1, id: 'sa0' }); txt(s.a[1], 520, 640, { s: 36, al: 'center', a: k1, id: 'sa1' });
+  txt(s.b[0], 1400, 560, { s: 150, f: F.mono, w: 600, c: C.acc, al: 'center', a: k2, id: 'sb0' }); txt(s.b[1], 1400, 640, { s: 36, al: 'center', a: k2, id: 'sb1' });
+  x.save(); x.globalAlpha = Math.min(k1, k2); hair(W / 2, 420, W / 2, 700, C.line, 2); x.restore();
+}
+function sBars(t, s) {
+  cover(IM[s.img], 60, 60, 640, 860, { flash: flashK(t, s) }, .5, .3, null, lerp(1.2, 1.3, K(t, s))); tag('SANBORN MAP · NEWTON · 1918', 60, 46, { id: 'tg' });
+  txt(s.title, 780, 140, { s: 24, f: F.mono, w: 600, c: C.dim, ls: 2, id: 'bt' });
+  const mx = 12000, X0 = 800, BW = 200, gap = 70, Yb = 840, Hm = 600;
+  s.data.forEach(([y, v], i) => { const a0 = AT(s, [-.16, -.3, -.45, -.62][i]), k = eo(seg(t, a0, a0 + .7)); if (k <= 0) return; const h = Hm * v / mx * k, X = X0 + i * (BW + gap);
+    fill(X, Yb - h, BW, h, i === 3 ? C.acc : '#8c7a62'); txt(y, X + BW / 2, Yb + 48, { s: 36, f: F.mono, w: 600, c: C.dim, al: 'center', id: 'by' + i });
+    txt(v.toLocaleString('en-US'), X + BW / 2, Yb - h - 18, { s: 38, f: F.mono, w: 600, al: 'center', a: seg(k, .8, 1), id: 'bv' + i }); });
+  hair(780, Yb, 1860, Yb, C.dim, 2);
+}
+function sCompare(t, s) {
+  cover(IM.square2014_court, 60, 60, 1800, 860, { flash: flashK(t, s), colour: 1 }, .5, .5, null, lerp(1, 1.05, K(t, s))); shade(60, 60, 1800, 860, .8);
+  txt(s.title, W / 2, 190, { s: 28, f: F.mono, w: 600, c: C.dim, al: 'center', ls: 2, id: 'ct' });
+  const X0 = W / 2, sc = 16; hair(X0, 300, X0, 820, C.text, 2); txt('IOWA AVERAGE', X0, 860, { s: 22, f: F.mono, w: 600, c: C.dim, al: 'center', id: 'cz' });
+  s.items.forEach(([y, v], i) => { const a0 = AT(s, i ? -.75 : -.42), k = eo(seg(t, a0, a0 + .6)); if (k <= 0) return; const Y = 380 + i * 230, w = Math.abs(v) * sc * k, X = v > 0 ? X0 : X0 - w;
+    fill(X, Y, w, 110, v > 0 ? '#8c7a62' : C.acc); txt(y, v > 0 ? X0 - 30 : X0 + 30, Y + 74, { s: 52, f: F.mono, w: 600, al: v > 0 ? 'right' : 'left', id: 'cy' + i });
+    txt((v > 0 ? '+' : '−') + Math.abs(v) + '%', v > 0 ? X + w + 24 : X - 24, Y + 78, { s: 64, f: F.mono, w: 600, c: v > 0 ? C.text : C.acc, al: v > 0 ? 'left' : 'right', a: seg(k, .7, 1), id: 'cv' + i }); });
+  tag(s.src, 60, 950, { id: 'cs' });
+}
+function sPop(t, s) {
+  cover(IM.pano1907, 60, 60, 1800, 860, { flash: flashK(t, s) }, .5, .5); shade(60, 60, 1800, 860, .82);
+  txt('NEWTON · POPULATION · U.S. CENSUS', 140, 150, { s: 26, f: F.mono, w: 600, c: C.dim, ls: 2, id: 'pt' });
+  const X0 = 200, X1 = 1720, Y0 = 820, Y1 = 260, px = y => lerp(X0, X1, (y - 1900) / 120), py = v => lerp(Y0, Y1, v / 18000);
+  hair(X0, Y0, X1, Y0, C.dim, 2); [1900, 1930, 1960, 1990, 2020].forEach((y, i) => txt(String(y), px(y), Y0 + 44, { s: 28, f: F.mono, w: 600, c: C.dim, al: 'center', id: 'px' + i }));
+  hair(X0, py(15000), X1, py(15000), C.faint, 1.5, [8, 8]); txt('15,000', X0 - 14, py(15000) + 9, { s: 24, f: F.mono, c: C.dim, al: 'right', id: 'p15' });
+  const k = eo(seg(t, s.t0 + .3, AT(s, -.85))), d = s.data, last = d[d.length - 1][0], upto = 1900 + (last - 1900) * k;
+  x.save(); x.strokeStyle = C.acc; x.lineWidth = 5; x.beginPath();
+  for (let i = 0; i < d.length; i++) { const [y, v] = d[i]; if (y > upto) { const [y0, v0] = d[i - 1], f = (upto - y0) / (y - y0); x.lineTo(px(upto), py(lerp(v0, v, f))); break; } i ? x.lineTo(px(y), py(v)) : x.moveTo(px(y), py(v)); }
+  x.stroke(); x.restore();
+  [[1960, 15381], [2020, 15760]].forEach(([y, v], i) => { const kk = seg(t, AT(s, i ? -.85 : -.55), AT(s, i ? -.85 : -.55) + .1); if (kk <= 0 || upto < y - .5) return;
+    x.save(); x.globalAlpha = kk; x.fillStyle = C.acc; x.beginPath(); x.arc(px(y), py(v), 11, 0, 7); x.fill(); x.restore();
+    txt(y + ' · ' + v.toLocaleString('en-US'), px(y) + (i ? -20 : 0), py(v) - 30, { s: 34, f: F.mono, w: 600, al: i ? 'right' : 'center', a: kk, id: 'pv' + i }); });
+}
+function sSeq(t, s) {
+  const n = s.items.length, per = (s.t1 - s.t0) / n, i = Math.min(n - 1, Math.floor((t - s.t0) / per)), [img, tg] = s.items[i], l = t - s.t0 - i * per;
+  cover(IM[img], 60, 60, 1800, 860, { flash: 1 - seg(l, 0, .14), colour: 1 }, .5, .5, null, lerp(1, 1.07, l / per)); tag(tg, 60, 46, { id: 'tg' + i });
+}
+function sDots(t, s) {
+  const cols = 60, gap = 25, X0 = (W - cols * gap) / 2 + gap / 2, Y0 = 150;
+  const reveal = s.hold ? 1 : seg(t, s.t0 + .3, s.t1 - .3), redK = s.hold ? 1 : 0;
+  txt('1,800', 60, 110, { s: 56, f: F.mono, w: 600, c: C.text, id: 'dn' }); txt('Maytag jobs lost in Newton · one dot for each', 260, 104, { s: 30, c: C.dim, id: 'dl' });
+  if (s.hold) { txt('550', 1860, 110, { s: 56, f: F.mono, w: 600, c: C.acc, al: 'right', id: 'dr' }); txt('on the last shift', 1640, 104, { s: 30, c: C.dim, al: 'right', id: 'dr2' }); }
+  const shown = Math.floor(reveal * s.n); x.save();
+  for (let i = 0; i < shown; i++) { const cx = X0 + (i % cols) * gap, cy = Y0 + 20 + Math.floor(i / cols) * gap;
+    x.fillStyle = redK && i >= s.n - s.red ? C.acc : C.text; x.fillRect(cx - 7, cy - 7, 14, 14); } x.restore();
+}
+function sPair(t, s) {
+  const isCol = n => /square|now|mural|speedway|hq|trinity/.test(n);
+  if (s.a === 'pano1907') { const im = IM.pano1907, sw = im.height * 880 / 860; plate(im, im.width * .47 - sw / 2, 0, sw, im.height, 60, 60, 880, 860, { flash: flashK(t, s) }); }
+  else cover(IM[s.a], 60, 60, 880, 860, { flash: flashK(t, s), colour: isCol(s.a) }, .5, .45);
+  tag(s.ta, 60, 46, { id: 'pa' });
+  const k = seg(t, s.t0 + 1.2, s.t0 + 1.3); if (k > 0) { cover(IM[s.b], 980, 60, 880, 860, { flash: 1 - seg(t, s.t0 + 1.2, s.t0 + 1.34), colour: isCol(s.b) }, .5, .45); tag(s.tb, 980, 46, { id: 'pb' }); }
+}
+function sChapter(t, s) {
+  const col = /hq|mural|wringer/.test(s.img);
+  cover(IM[s.img], 60, 60, 1800, 860, { colour: col }, .5, .45, null, lerp(1.0, 1.05, K(t, s))); shade(60, 60, 1800, 860, .66);
+  const k = seg(t, s.t0 + .2, s.t0 + .35); txt(s.num, W / 2, 430, { s: 64, f: F.mono, w: 600, c: C.acc, al: 'center', ls: 8, a: k, id: 'chn' });
+  txt(s.title, W / 2, 560, { s: s.title.length > 18 ? 96 : 110, w: 700, al: 'center', a: seg(t, s.t0 + .4, s.t0 + .55), id: 'cht' });
+}
+function sOpen(t, s) {
+  const im = IM.hq2005, w = 1100, h = w * im.height / im.width; cover(im, 60, 60 + (860 - h) / 2, w, h, { flash: flashK(t, s, .3), colour: 1 }, .5, .5, null, lerp(1, 1.05, K(t, s)));
+  tag(HQT, 60, 46 + (860 - h) / 2, { id: 'tg' });
+  const k = seg(t, s.t0 + .6, s.t0 + .7); txt('THURSDAY', 1220, 400, { s: 40, f: F.mono, w: 600, c: C.dim, ls: 4, a: k, id: 'od1' });
+  txt('25 OCT', 1220, 520, { s: 120, f: F.mono, w: 600, c: C.acc, a: k, id: 'od2' }); txt('2007', 1220, 650, { s: 120, f: F.mono, w: 600, c: C.acc, a: k, id: 'od3' });
+  txt('NEWTON, IOWA', 1224, 720, { s: 30, f: F.mono, w: 600, c: C.text, ls: 3, a: k, id: 'od4' });
+}
+function sTitle(t, s) {
+  sPano(t, { ...s, img: 'pano1907', tag: 'NEWTON, IOWA · 1907 · F. J. BANDHOLTZ', from_: .45, to: .55 }); shade(60, 520, 1800, 400, .86);
+  const k = seg(t, s.t0 + .3, s.t0 + .45); txt('What Happened to Newton, Iowa?', 120, 680, { s: 96, w: 700, a: k, id: 'ti1' });
+  txt('THE MAYTAG TOWN THAT WASHED AMERICA', 126, 750, { s: 30, f: F.mono, c: C.dim, ls: 3, a: seg(t, s.t0 + .9, s.t0 + 1.0), id: 'ti2' });
+  x.save(); x.globalAlpha = seg(t, s.t0 + 1.4, s.t0 + 1.5); fill(126, 800, 6, 70, C.acc); x.restore();
+  txt('Newton · Jasper County · Iowa', 150, 848, { s: 34, w: 700, a: seg(t, s.t0 + 1.4, s.t0 + 1.5), id: 'ti3' });
+}
+function sEnd(t, s) {
+  const k = seg(t, s.t0, s.t0 + .2); txt('What Happened to Newton, Iowa?', 120, 250, { s: 72, w: 700, a: k, id: 'e1' });
+  txt('THE MAYTAG TOWN THAT WASHED AMERICA', 124, 306, { s: 24, f: F.mono, c: C.dim, ls: 1, a: k, id: 'e2' });
+  x.save(); x.globalAlpha = k; hair(124, 346, lerp(124, 1200, eo(seg(t, s.t0, s.t0 + .6))), 346, C.dim, 1); x.restore();
+  const k3 = seg(t, s.t0 + .5, s.t0 + .6), cr = [
+    'Maps and photographs  Sanborn Map Co., Newton, 1883–1918; F. J. Bandholtz, 1907; A. Ruger, 1868 (Library of Congress) · White House photos, Pete Souza, 2009',
+    'F. L. Maytag, 1935: Los Angeles Times Photographic Archive, UCLA Library (CC BY 4.0) · U.S. Patent 1,866,779, H. F. Snyder, 1922',
+    'Maytag advertisements, scans by Don O’Brien (CC BY 2.0) · Newton photos: David Wilson (CC BY 2.0), Corey Coyle (CC BY 3.0), Xtianetas (CC BY 3.0),',
+    'Matt Owen (CC BY 2.0), Watts (CC BY 2.0), Christiane Tas and Adm58 (public domain), via Wikimedia Commons and Flickr',
+    'Words  Associated Press; CBS News; NPR; PRI The World / WGBH; Investigate Midwest; U.S. EPA; Public Papers of the Presidents, 2009',
+    'Music  original score; VSCO 2 CE (CC0), Salamander Grand Piano (CC BY 3.0, Alexander Holm)' ];
+  cr.forEach((c, i) => txt(c, 124, 560 + i * 40, { s: 21, c: '#CDBFA6', a: k3 }));
+  x.save(); x.globalAlpha = seg(t, s.t0 + .8, s.t0 + .9); cover(IM.fl_maytag_1935, 1460, 80, 340, 400, { colour: 1 }, .5, .3); x.restore();
+}
+const DRAW = { photo: sPhoto, stat: sStat, card: sCard, quote: sQuote, pano: sPano, ledger: sLedger, board: sBoard, chain: sChain, bids: sBids, split: sSplit, bars: sBars,
+  compare: sCompare, pop: sPop, seq: sSeq, dots: sDots, pair: sPair, chapter: sChapter, open: sOpen, title: sTitle, end: sEnd };
+function subs(t) { for (const [a, b, s] of SUBS) if (t >= a && t < b) { x.save(); x.shadowColor = 'rgba(0,0,0,1)'; x.shadowBlur = 14; txt(s, W / 2, 1022, { s: 47, w: 500, al: 'center' }); txt(s, W / 2, 1022, { s: 47, w: 500, al: 'center' }); x.restore(); } }
+window.render = function (t) {
+  FR = Math.floor(t * 30); x.setTransform(1, 0, 0, 1, 0, 0); x.globalAlpha = 1; fill(0, 0, W, H, C.bg);
+  let s = SC[0]; for (const c of SC) if (t >= c.t0) s = c; (DRAW[s.type] || sPhoto)(t, s);
+  if (t < FILM.dur - 1) subs(t);
+  const fi = 1 - seg(t, 0, .8), fo = seg(t, FILM.dur - 1.5, FILM.dur); if (fi > 0 || fo > 0) { x.save(); x.globalAlpha = Math.max(fi, fo); fill(0, 0, W, H, C.bg); x.restore(); }
+};
+window.TEXTS = function (t) { REC = []; window.render(t); const r = REC; REC = null; return r; };
+window.SUBCHECK = function () { let worst = 0, line = ''; for (const [a, b, s] of SUBS) { const w = tw(s, { s: 47, w: 500 }); if (w > worst) { worst = w; line = s; } } return { worst, line, ok: worst <= 1760 }; };
+window.EV = [];
+boot();
+</script></body></html>

@@ -1,0 +1,3078 @@
+{
+"dur": 1296.0,
+"scenes": [
+{
+"type": "open",
+"t0": 1.2,
+"line": "n01",
+"vd": 6.65,
+"t1": 8.75
+},
+{
+"type": "photo",
+"img": "sanborn1918_maytag",
+"tag": "SANBORN MAP · NEWTON · NOV 1918 · THE MAYTAG WORKS",
+"z": [
+1.0,
+1.12
+],
+"fx": 0.4,
+"fy": 0.7,
+"t0": 8.75,
+"line": "n02",
+"vd": 7.46,
+"t1": 17.11
+},
+{
+"type": "stat",
+"img": "hq2005",
+"num": "550",
+"label": "workers on the last day",
+"tag": "MAYTAG HEADQUARTERS, NEWTON · 2005",
+"at": 0.3,
+"t0": 17.11,
+"line": "n03",
+"vd": 14.54,
+"colour": 1,
+"t1": 32.55
+},
+{
+"type": "quote",
+"img": "wringer",
+"imgTag": "MAYTAG WRINGER WASHER · PHOTO: WATTS (CC BY 2.0)",
+"q": [
+"“Maytag,",
+"the dependability",
+"people.”"
+],
+"who": "THE SIGN MARK WICKLIFF CARRIED OUT · AP · 26 OCT 2007",
+"at": -0.45,
+"t0": 32.55,
+"line": "n04",
+"vd": 10.75,
+"colour": 1,
+"t1": 44.2
+},
+{
+"type": "stat",
+"img": "sanborn1918_maytag",
+"num": "1 in 5",
+"label": "people in Newton worked for Maytag at the peak",
+"tag": "SANBORN MAP · NEWTON · NOV 1918 · THE MAYTAG WORKS",
+"at": -0.55,
+"t0": 44.2,
+"line": "n05",
+"vd": 12.66,
+"t1": 57.75
+},
+{
+"type": "photo",
+"img": "wringer",
+"tag": "MAYTAG WRINGER WASHER · PHOTO: WATTS (CC BY 2.0)",
+"z": [
+1.0,
+1.12
+],
+"t0": 57.75,
+"line": "n06",
+"vd": 11.43,
+"colour": 1,
+"t1": 70.08
+},
+{
+"type": "title",
+"t0": 70.08,
+"line": "n07",
+"vd": 7.12,
+"t1": 78.1
+},
+{
+"type": "pano",
+"img": "pano1907",
+"tag": "PANORAMA · F. J. BANDHOLTZ · NEWTON · 1907 · LIBRARY OF CONGRESS",
+"t0": 78.1,
+"line": "n08",
+"vd": 18.07,
+"t1": 97.07
+},
+{
+"type": "photo",
+"img": "ad1921_mm",
+"tag": "MAYTAG ADVERTISEMENT · c. 1921",
+"z": [
+1.0,
+1.1
+],
+"fy": 0.3,
+"t0": 97.07,
+"line": "n09",
+"vd": 12.47,
+"t1": 110.44
+},
+{
+"type": "photo",
+"img": "dealer1926",
+"tag": "A MAYTAG DEALER AND HIS TRUCKS · c. 1926",
+"small": 1,
+"t0": 110.44,
+"line": "n10",
+"vd": 9.16,
+"colour": 1,
+"t1": 120.5
+},
+{
+"type": "chapter",
+"t0": 120.5,
+"num": "I",
+"title": "The Feeder",
+"img": "birdseye1868",
+"t1": 124.7
+},
+{
+"type": "photo",
+"img": "birdseye1868",
+"tag": "BIRD’S-EYE VIEW OF NEWTON · A. RUGER · 1868 · LIBRARY OF CONGRESS",
+"z": [
+1.0,
+1.25
+],
+"fy": 0.45,
+"t0": 124.7,
+"line": "n11",
+"vd": 7.51,
+"t1": 133.11
+},
+{
+"type": "card",
+"name": "Frederick Louis Maytag",
+"sub": "1857–1937 · CO-FOUNDER, 1893",
+"img": "fl_maytag_1935",
+"tag": "F. L. MAYTAG · LOS ANGELES TIMES · 1935 (CC BY 4.0)",
+"date": "1893",
+"portrait": 1,
+"t0": 133.11,
+"line": "n12",
+"vd": 23.0,
+"colour": 1,
+"t1": 157.01
+},
+{
+"type": "photo",
+"img": "sanborn1883",
+"tag": "SANBORN MAP · NEWTON · NOV 1883",
+"z": [
+1.0,
+1.2
+],
+"fy": 0.4,
+"t0": 157.01,
+"line": "n13",
+"vd": 14.49,
+"t1": 172.4
+},
+{
+"type": "stat",
+"img": "sanborn1906_index",
+"num": "1902",
+"label": "the largest maker of self-feeders in the world",
+"tag": "SANBORN MAP · NEWTON · FEB 1906",
+"at": 0.5,
+"t0": 172.4,
+"line": "n14",
+"vd": 8.01,
+"t1": 181.31
+},
+{
+"type": "pano",
+"img": "pano1907",
+"tag": "NEWTON, IOWA · 1907 · F. J. BANDHOLTZ · LIBRARY OF CONGRESS",
+"date": "1907",
+"from_": 0.15,
+"to": 0.85,
+"t0": 181.31,
+"line": "n15",
+"vd": 9.71,
+"t1": 191.91
+},
+{
+"type": "photo",
+"img": "ad1916",
+"tag": "MAYTAG ADVERTISEMENT · “EVOLUTION” · c. 1916",
+"z": [
+1.0,
+1.12
+],
+"fy": 0.2,
+"t0": 191.91,
+"line": "n16",
+"vd": 12.08,
+"t1": 204.89
+},
+{
+"type": "photo",
+"img": "antique_washer",
+"tag": "AN EARLY MAYTAG WASHER · PHOTO, WIKIMEDIA COMMONS",
+"small": 1,
+"colour": 1,
+"t0": 204.89,
+"line": "n17",
+"vd": 14.75,
+"t1": 220.54
+},
+{
+"type": "quote",
+"img": "antique_washer",
+"colour": 1,
+"imgTag": "AN EARLY MAYTAG WASHER",
+"q": [
+"“We call this",
+"the Milkstool",
+"Dolly.”"
+],
+"who": "LELAND SMITH · 40 YEARS AT MAYTAG · NPR · 2008",
+"at": -0.55,
+"t0": 220.54,
+"line": "q01",
+"vd": 14.83,
+"t1": 236.27
+},
+{
+"type": "photo",
+"img": "sanborn1918_index",
+"tag": "SANBORN MAP · NEWTON · NOV 1918 · INDEX · POPULATION 5,100",
+"date": "1918",
+"z": [
+1.0,
+1.1
+],
+"fy": 0.3,
+"t0": 236.27,
+"line": "n18",
+"vd": 8.92,
+"t1": 246.09
+},
+{
+"type": "photo",
+"img": "sanborn1918_maytag",
+"tag": "SANBORN MAP · NEWTON · NOV 1918 · SHEET 3",
+"z": [
+1.0,
+1.04
+],
+"fy": 0.62,
+"fy2": 0.04,
+"rings": [
+[
+1190,
+2338,
+560,
+"MAYTAG CO.",
+-0.05
+],
+[
+2401,
+1849,
+330,
+"ONE MINUTE MFG CO.",
+-0.33
+],
+[
+2125,
+467,
+300,
+"WOODROW MFG CO.",
+-0.55
+]
+],
+"t0": 246.09,
+"line": "n19",
+"vd": 24.59,
+"t1": 271.58
+},
+{
+"type": "stat",
+"img": "sanborn1918_index",
+"num": "4",
+"label": "washing-machine makers · a town of about 5,000",
+"tag": "SANBORN MAP · NEWTON · NOV 1918 · INDEX",
+"at": 0.4,
+"t0": 271.58,
+"line": "n20",
+"vd": 11.38,
+"t1": 283.86
+},
+{
+"type": "chapter",
+"t0": 283.86,
+"num": "II",
+"title": "The Gyrafoam",
+"img": "patent1866779-1",
+"t1": 288.06
+},
+{
+"type": "photo",
+"img": "ad_mm_outdoors",
+"tag": "MAYTAG MULTI-MOTOR ADVERTISEMENT · GASOLINE ENGINE",
+"date": "1914",
+"z": [
+1.0,
+1.1
+],
+"fy": 0.4,
+"t0": 288.06,
+"line": "n21",
+"vd": 16.47,
+"t1": 305.43
+},
+{
+"type": "photo",
+"img": "ad_mm_power",
+"tag": "MAYTAG MULTI-MOTOR ADVERTISEMENT",
+"date": "1919",
+"z": [
+1.0,
+1.08
+],
+"t0": 305.43,
+"line": "n22",
+"vd": 10.75,
+"t1": 317.08
+},
+{
+"type": "photo",
+"img": "ad_mm_tree",
+"tag": "MAYTAG ADVERTISEMENT",
+"z": [
+1.05,
+1.15
+],
+"t0": 317.08,
+"line": "n23",
+"vd": 3.8,
+"t1": 321.78
+},
+{
+"type": "photo",
+"img": "patent1866779-1",
+"tag": "U.S. PATENT 1,866,779 · H. F. SNYDER · FILED 14 JUNE 1922",
+"z": [
+1.0,
+1.08
+],
+"fy": 0.35,
+"name": "Howard F. Snyder",
+"role": "HEAD OF DEVELOPMENT · THE MAYTAG CO.",
+"t0": 321.78,
+"line": "n24",
+"vd": 16.24,
+"t1": 338.92
+},
+{
+"type": "photo",
+"img": "patent1866779-3",
+"tag": "U.S. PATENT 1,866,779 · H. F. SNYDER · FILED 14 JUNE 1922 · FIG. 4",
+"z": [
+1.0,
+1.15
+],
+"fy": 0.18,
+"rings": [
+[
+735,
+600,
+260,
+"THE AGITATOR",
+-0.45
+]
+],
+"t0": 338.92,
+"line": "n25",
+"vd": 11.14,
+"t1": 350.96
+},
+{
+"type": "photo",
+"img": "patent1866779-1",
+"tag": "U.S. PATENT 1,866,779 · H. F. SNYDER · FILED 14 JUNE 1922",
+"date": "1922",
+"fy": 0.12,
+"z": [
+1.1,
+1.18
+],
+"rings": [
+[
+764,
+442,
+210,
+"FILED 14 JUNE 1922",
+0.6
+]
+],
+"t0": 350.96,
+"line": "n26",
+"vd": 6.99,
+"t1": 358.85
+},
+{
+"type": "stat",
+"img": "ad1921_mm",
+"num": "38 → 1",
+"label": "U.S. washer makers · by one company history",
+"tag": "MAYTAG ADVERTISEMENT · c. 1921",
+"at": -0.4,
+"t0": 358.85,
+"line": "n27",
+"vd": 9.44,
+"t1": 369.2
+},
+{
+"type": "photo",
+"img": "ad1921_mm",
+"tag": "MAYTAG ADVERTISEMENT · c. 1921",
+"z": [
+1.12,
+1.25
+],
+"fy": 0.35,
+"t0": 369.2,
+"line": "n28",
+"vd": 10.67,
+"t1": 380.77
+},
+{
+"type": "stat",
+"img": "ad_mm_tree",
+"num": "1,000,000",
+"label": "Maytag washers by 1927",
+"tag": "MAYTAG ADVERTISEMENT",
+"at": 0.4,
+"t0": 380.77,
+"line": "n29",
+"vd": 6.26,
+"t1": 387.92
+},
+{
+"type": "bars",
+"title": "NEWTON · POPULATION · U.S. CENSUS",
+"data": [
+[
+"1900",
+3682
+],
+[
+"1910",
+4616
+],
+[
+"1920",
+6627
+],
+[
+"1930",
+11560
+]
+],
+"img": "sanborn1918_index",
+"t0": 387.92,
+"line": "n30",
+"vd": 12.81,
+"t1": 401.64
+},
+{
+"type": "photo",
+"img": "ad1916_dream",
+"tag": "MAYTAG ADVERTISEMENT · c. 1916",
+"z": [
+1.0,
+1.1
+],
+"fy": 0.3,
+"t0": 401.64,
+"line": "n31",
+"vd": 9.52,
+"t1": 412.06
+},
+{
+"type": "card",
+"name": "F. L. Maytag",
+"sub": "75 IN 1932 · $100 FOR EACH OF 1,500 WORKERS",
+"img": "fl_maytag_1935",
+"tag": "F. L. MAYTAG · LOS ANGELES TIMES · 1935 (CC BY 4.0)",
+"date": "1932",
+"portrait": 1,
+"t0": 412.06,
+"line": "n32",
+"vd": 15.16,
+"colour": 1,
+"t1": 428.13
+},
+{
+"type": "chapter",
+"t0": 428.13,
+"num": "III",
+"title": "The Strike",
+"img": "sanborn1918_maytag",
+"t1": 432.33
+},
+{
+"type": "card",
+"name": "F. L. Maytag",
+"sub": "DIED 26 MARCH 1937 · BURIED IN NEWTON",
+"img": "fl_maytag_1935",
+"tag": "F. L. MAYTAG · 1935 (CC BY 4.0)",
+"date": "1937",
+"portrait": 1,
+"t0": 432.33,
+"line": "n33",
+"vd": 17.15,
+"colour": 1,
+"t1": 450.38
+},
+{
+"type": "photo",
+"img": "sanborn1918_maytag",
+"tag": "SANBORN MAP · NEWTON · NOV 1918 · THE MAYTAG WORKS",
+"z": [
+1.15,
+1.3
+],
+"fx": 0.35,
+"fy": 0.7,
+"t0": 450.38,
+"line": "n34",
+"vd": 6.41,
+"t1": 457.69
+},
+{
+"type": "stat",
+"img": "sanborn1918_maytag",
+"num": "−10%",
+"label": "pay cut · May 1938 · UE Local 1116",
+"tag": "SANBORN MAP · NEWTON · NOV 1918 · THE MAYTAG WORKS",
+"at": 0.4,
+"t0": 457.69,
+"line": "n35",
+"vd": 17.78,
+"t1": 476.37
+},
+{
+"type": "board",
+"upto": 0,
+"t0": 476.37,
+"line": "n36",
+"vd": 8.27,
+"t1": 485.54
+},
+{
+"type": "board",
+"upto": 2,
+"t0": 485.54,
+"line": "n37",
+"vd": 15.66,
+"t1": 502.1
+},
+{
+"type": "board",
+"upto": 3,
+"t0": 502.1,
+"line": "n38",
+"vd": 11.46,
+"t1": 514.45
+},
+{
+"type": "stat",
+"img": "sanborn1918_maytag",
+"num": "34",
+"label": "people hurt on the night of 21 July 1938",
+"tag": "SANBORN MAP · NEWTON · NOV 1918 · THE STREETS AROUND THE PLANT",
+"at": -0.55,
+"t0": 514.45,
+"line": "n39",
+"vd": 18.88,
+"t1": 534.23
+},
+{
+"type": "board",
+"upto": 3,
+"hold": 1,
+"t0": 534.23,
+"line": "n40",
+"vd": 15.77,
+"t1": 550.89
+},
+{
+"type": "quote",
+"img": "sanborn1918_maytag",
+"fx": 0.35,
+"fy": 0.7,
+"imgTag": "SANBORN MAP · NEWTON · NOV 1918 · THE MAYTAG WORKS",
+"q": [
+"“Apparently,",
+"our employees",
+"weren’t so happy",
+"as we thought!”"
+],
+"who": "FRED MAYTAG II · AS REPORTED · INVESTIGATE MIDWEST, 2015",
+"t0": 550.89,
+"line": "q02",
+"vd": 5.11,
+"t1": 556.9
+},
+{
+"type": "board",
+"upto": 4,
+"t0": 556.9,
+"line": "n41",
+"vd": 10.88,
+"t1": 568.68
+},
+{
+"type": "photo",
+"img": "sanborn1918_maytag",
+"tag": "SANBORN MAP · NEWTON · NOV 1918",
+"z": [
+1.0,
+1.08
+],
+"fy": 0.6,
+"t0": 568.68,
+"line": "n42",
+"vd": 4.95,
+"t1": 574.53
+},
+{
+"type": "chapter",
+"t0": 574.53,
+"num": "IV",
+"title": "The Dependability People",
+"img": "wringer",
+"t1": 578.74
+},
+{
+"type": "stat",
+"img": "wringer",
+"num": "1941–45",
+"label": "no washers: parts for military aircraft",
+"tag": "MAYTAG WRINGER WASHER · PHOTO: WATTS (CC BY 2.0)",
+"at": 0.4,
+"t0": 578.74,
+"line": "n43",
+"vd": 9.05,
+"colour": 1,
+"t1": 588.69
+},
+{
+"type": "stat",
+"img": "sanborn1918_maytag",
+"num": "1949",
+"label": "Plant 2 · the first Maytag automatic",
+"tag": "SANBORN MAP · NEWTON · NOV 1918 · THE FIRST MAYTAG WORKS",
+"at": 0.3,
+"t0": 588.69,
+"line": "n44",
+"vd": 10.44,
+"t1": 600.02
+},
+{
+"type": "photo",
+"img": "hq2005",
+"tag": "MAYTAG HEADQUARTERS (DEDICATED 1961) · PHOTO 2005",
+"small": 1,
+"date": "1962",
+"t0": 600.02,
+"line": "n45",
+"vd": 9.18,
+"colour": 1,
+"t1": 610.11
+},
+{
+"type": "stat",
+"img": "antique_washer",
+"num": "1967",
+"label": "the lonely repairman: nothing to fix",
+"tag": "A MAYTAG WASHER · WIKIMEDIA COMMONS",
+"at": 0.3,
+"t0": 610.11,
+"line": "n46",
+"vd": 12.81,
+"colour": 1,
+"t1": 623.82
+},
+{
+"type": "photo",
+"img": "ad_mm_power",
+"tag": "MAYTAG ADVERTISEMENT",
+"z": [
+1.0,
+1.1
+],
+"fy": 0.3,
+"t0": 623.82,
+"line": "n47",
+"vd": 7.93,
+"t1": 632.65
+},
+{
+"type": "quote",
+"img": "hq2005",
+"colour": 1,
+"imgTag": "MAYTAG HEADQUARTERS, NEWTON · 2005",
+"q": [
+"“We made good",
+"wages there,",
+"but we also made",
+"a good product.”"
+],
+"who": "CARL REPP · 30 YEARS AT THE PLANT · CBS NEWS · 2007",
+"at": -0.25,
+"t0": 632.65,
+"line": "q03",
+"vd": 8.77,
+"t1": 642.32
+},
+{
+"type": "quote",
+"img": "hq2005",
+"colour": 1,
+"imgTag": "MAYTAG HEADQUARTERS, NEWTON · 2005",
+"q": [
+"“They call us",
+"the dependability",
+"people.”"
+],
+"who": "CARL REPP · CBS NEWS · 2007",
+"at": 0.2,
+"t0": 642.32,
+"line": "q04",
+"vd": 7.98,
+"t1": 651.2
+},
+{
+"type": "stat",
+"img": "wringer",
+"num": "11.7M",
+"label": "wringer washers built in Newton · to 1983",
+"tag": "MAYTAG WRINGER WASHER · PHOTO: WATTS (CC BY 2.0)",
+"at": -0.6,
+"t0": 651.2,
+"line": "n48",
+"vd": 11.06,
+"colour": 1,
+"t1": 663.16
+},
+{
+"type": "stat",
+"img": "newton_tower",
+"num": "3,000+",
+"label": "employed in Newton at the peak · 1 in 5 people in town",
+"tag": "NEWTON WATER TOWER · COREY COYLE, 2007 (CC BY 3.0)",
+"at": 0.4,
+"t0": 663.16,
+"line": "n49",
+"vd": 12.27,
+"colour": 1,
+"t1": 676.33
+},
+{
+"type": "photo",
+"img": "maytag_park",
+"tag": "MAYTAG PARK, NEWTON · XTIANETAS, 2011 (CC BY 3.0)",
+"z": [
+1.0,
+1.08
+],
+"t0": 676.33,
+"line": "n50",
+"vd": 7.85,
+"colour": 1,
+"t1": 685.08
+},
+{
+"type": "photo",
+"img": "square2014_court",
+"tag": "THE SQUARE, NEWTON · DAVID WILSON, 2014 (CC BY 2.0)",
+"z": [
+1.0,
+1.06
+],
+"t0": 685.08,
+"line": "n51",
+"vd": 6.57,
+"colour": 1,
+"t1": 692.55
+},
+{
+"type": "quote",
+"img": "square2014_b",
+"colour": 1,
+"imgTag": "NEWTON · DAVID WILSON, 2014 (CC BY 2.0)",
+"q": [
+"“At Maytag,",
+"it was 30 years",
+"and you got",
+"to retire.”"
+],
+"who": "DENA JOHNSON PERVIS · NEWTON · NPR · 2006",
+"at": -0.45,
+"t0": 692.55,
+"line": "q05",
+"vd": 9.03,
+"t1": 702.48
+},
+{
+"type": "ledger",
+"title": "THE MAYTAG PROMISE",
+"items": [
+[
+"30",
+"years at the plant"
+],
+[
+"+",
+"a pension"
+],
+[
+"+",
+"full medical benefits"
+]
+],
+"img": "square2014_court",
+"imgTag": "THE SQUARE, NEWTON · 2014",
+"t0": 702.48,
+"line": "n52",
+"vd": 13.81,
+"colour": 1,
+"t1": 717.18
+},
+{
+"type": "chapter",
+"t0": 717.18,
+"num": "V",
+"title": "Sold",
+"img": "hq2005",
+"t1": 721.38
+},
+{
+"type": "chain",
+"upto": 2,
+"t0": 721.38,
+"line": "n53",
+"vd": 12.24,
+"t1": 734.52
+},
+{
+"type": "chain",
+"upto": 2,
+"hold": 1,
+"t0": 734.52,
+"line": "n54",
+"vd": 10.44,
+"t1": 745.86
+},
+{
+"type": "stat",
+"img": "newton_tower",
+"num": "2003",
+"label": "Newton layoffs begin",
+"tag": "NEWTON · COREY COYLE, 2007 (CC BY 3.0)",
+"at": -0.6,
+"t0": 745.86,
+"line": "n55",
+"vd": 9.21,
+"colour": 1,
+"t1": 755.97
+},
+{
+"type": "bids",
+"t0": 755.97,
+"line": "n56",
+"vd": 24.36,
+"t1": 781.23
+},
+{
+"type": "chain",
+"upto": 4,
+"t0": 781.23,
+"line": "n57",
+"vd": 7.22,
+"t1": 789.35
+},
+{
+"type": "split",
+"a": [
+"≈ 1,000",
+"jobs in the plant"
+],
+"b": [
+"≈ 900",
+"jobs at headquarters"
+],
+"date": "10 MAY 2006",
+"tag": "WHIRLPOOL’S ANNOUNCEMENT · AP · 11 MAY 2006",
+"t0": 789.35,
+"line": "n58",
+"vd": 16.39,
+"t1": 806.64
+},
+{
+"type": "stat",
+"img": "square2014_court",
+"num": "$100M+",
+"label": "offered by the state of Iowa · not enough",
+"tag": "THE JASPER COUNTY COURTHOUSE, NEWTON · 2014 (CC BY 2.0)",
+"at": -0.25,
+"t0": 806.64,
+"line": "n59",
+"vd": 9.65,
+"colour": 1,
+"t1": 817.2
+},
+{
+"type": "photo",
+"img": "hq2005",
+"tag": "MAYTAG HEADQUARTERS, NEWTON · 2005",
+"small": 1,
+"t0": 817.2,
+"line": "n60",
+"vd": 3.41,
+"colour": 1,
+"t1": 821.51
+},
+{
+"type": "quote",
+"img": "hq2005",
+"colour": 1,
+"imgTag": "MAYTAG HEADQUARTERS, NEWTON · 2005",
+"q": [
+"“Now the fundamentals",
+"of the company",
+"had eroded…",
+"They were losing money.”"
+],
+"who": "JEFF NOEL · WHIRLPOOL · CBS NEWS · 2007",
+"t0": 821.51,
+"line": "q06",
+"vd": 8.45,
+"t1": 830.86
+},
+{
+"type": "quote",
+"img": "wringer",
+"colour": 1,
+"imgTag": "MAYTAG WRINGER WASHER · PHOTO: WATTS (CC BY 2.0)",
+"q": [
+"“widespread",
+"epidemic”"
+],
+"who": "TED JOHNSON · PRESIDENT, UAW LOCAL 997 · AP · 2007",
+"at": -0.4,
+"t0": 830.86,
+"line": "n61",
+"vd": 13.44,
+"t1": 845.2
+},
+{
+"type": "photo",
+"img": "square2014_a",
+"tag": "NEWTON · DAVID WILSON, 2014 (CC BY 2.0)",
+"z": [
+1.0,
+1.08
+],
+"t0": 845.2,
+"line": "n62",
+"vd": 11.51,
+"colour": 1,
+"t1": 857.61
+},
+{
+"type": "quote",
+"img": "square2014_c",
+"colour": 1,
+"imgTag": "NEWTON · DAVID WILSON, 2014 (CC BY 2.0)",
+"q": [
+"“My aunt worked",
+"there for 30 years…",
+"It’s sad.",
+"It’s like a death.”"
+],
+"who": "VICKY DUSHEIN · MAYTAG LINE WORKER, 22 YEARS · NPR · 2006",
+"at": -0.3,
+"t0": 857.61,
+"line": "q07",
+"vd": 14.3,
+"t1": 872.81
+},
+{
+"type": "chapter",
+"t0": 872.81,
+"num": "VI",
+"title": "The Last Shift",
+"img": "hq2005",
+"t1": 877.01
+},
+{
+"type": "open",
+"again": 1,
+"t0": 877.01,
+"line": "n63",
+"vd": 7.15,
+"t1": 885.06
+},
+{
+"type": "stat",
+"img": "sanborn1918_maytag",
+"num": "550",
+"label": "on the line, 25 October 2007",
+"tag": "SANBORN MAP · NEWTON · NOV 1918 · THE MAYTAG WORKS",
+"at": 0.3,
+"t0": 885.06,
+"line": "n64",
+"vd": 8.77,
+"t1": 894.72
+},
+{
+"type": "card",
+"name": "Mark Wickliff",
+"sub": "",
+"lines": [
+"49 · 26½ years at Maytag",
+"Four generations of Maytag workers",
+"Carried out “Maytag, the dependability people”"
+],
+"img": "wringer",
+"imgTag": "MAYTAG WRINGER WASHER · PHOTO: WATTS (CC BY 2.0)",
+"tag": "AP · 26 OCTOBER 2007",
+"date": "2007",
+"noportrait": 1,
+"t0": 894.72,
+"line": "n65",
+"vd": 18.33,
+"colour": 1,
+"t1": 913.95
+},
+{
+"type": "quote",
+"img": "wringer",
+"colour": 1,
+"imgTag": "MAYTAG WRINGER WASHER · PHOTO: WATTS (CC BY 2.0)",
+"q": [
+"“It’s just close",
+"enough to look for",
+"another job.”"
+],
+"who": "MARK WICKLIFF · 26½ YEARS · AP · 2007",
+"t0": 913.95,
+"line": "q08",
+"vd": 5.13,
+"t1": 919.98
+},
+{
+"type": "quote",
+"img": "wringer",
+"colour": 1,
+"imgTag": "MAYTAG WRINGER WASHER · PHOTO: WATTS (CC BY 2.0)",
+"q": [
+"“I’m numb,",
+"I’m scared.",
+"I’ll be all right,",
+"I think.”"
+],
+"who": "MIKE JACKSON · 18 YEARS · AP · 2007",
+"at": -0.25,
+"t0": 919.98,
+"line": "q09",
+"vd": 9.55,
+"t1": 930.43
+},
+{
+"type": "quote",
+"img": "hq2005",
+"colour": 1,
+"imgTag": "MAYTAG HEADQUARTERS, NEWTON · 2005",
+"q": [
+"R.I.P.",
+"“I love you all.”"
+],
+"who": "PLAQUE ON THE PLANT FENCE · CBS / AP · 26 OCT 2007",
+"at": -0.35,
+"t0": 930.43,
+"line": "n67",
+"vd": 12.19,
+"t1": 943.52
+},
+{
+"type": "quote",
+"img": "square2014_court",
+"colour": 1,
+"imgTag": "THE SQUARE, NEWTON · 2014",
+"q": [
+"“I’ve seen",
+"grown men crying",
+"that day.”"
+],
+"who": "MINDY POLLOCK · 22 YEARS AT MAYTAG · PRI THE WORLD / WGBH · 2017",
+"at": -0.45,
+"t0": 943.52,
+"line": "q10",
+"vd": 9.0,
+"t1": 953.42
+},
+{
+"type": "card",
+"name": "Jim Schutte",
+"sub": "",
+"lines": [
+"Machine repairman, 21 years",
+"His 30 years would have come on 17 August",
+"Retire now? “Probably never.”"
+],
+"img": "sanborn1918_maytag",
+"imgTag": "SANBORN MAP · NEWTON · NOV 1918 · THE MAYTAG WORKS",
+"tag": "PRI THE WORLD / WGBH · 2017",
+"noportrait": 1,
+"t0": 953.42,
+"line": "n69",
+"vd": 16.55,
+"t1": 970.87
+},
+{
+"type": "dots",
+"n": 1800,
+"red": 550,
+"t0": 970.87,
+"line": "n70",
+"vd": 7.15,
+"t1": 978.91
+},
+{
+"type": "dots",
+"n": 1800,
+"red": 550,
+"hold": 1,
+"t0": 978.91,
+"line": "n71",
+"vd": 8.35,
+"t1": 988.16
+},
+{
+"type": "chapter",
+"t0": 988.16,
+"num": "VII",
+"title": "What Newton Built Next",
+"img": "mural2017",
+"t1": 992.36
+},
+{
+"type": "stat",
+"img": "newton_tower",
+"num": "9.9%",
+"label": "unemployment in Newton, 2009",
+"tag": "NEWTON · COREY COYLE, 2007 (CC BY 3.0)",
+"at": 0.3,
+"t0": 992.36,
+"line": "n72",
+"vd": 13.94,
+"colour": 1,
+"t1": 1007.2
+},
+{
+"type": "photo",
+"img": "square2014_c",
+"tag": "NEWTON · DAVID WILSON, 2014 (CC BY 2.0)",
+"z": [
+1.0,
+1.08
+],
+"t0": 1007.2,
+"line": "n73",
+"vd": 8.53,
+"colour": 1,
+"t1": 1016.63
+},
+{
+"type": "photo",
+"img": "sanborn1918_maytag",
+"tag": "SANBORN MAP · NEWTON · NOV 1918 · THE MAYTAG WORKS",
+"z": [
+1.1,
+1.2
+],
+"fx": 0.45,
+"fy": 0.75,
+"t0": 1016.63,
+"line": "n74",
+"vd": 6.99,
+"t1": 1024.52
+},
+{
+"type": "stat",
+"img": "obama_trinity1",
+"num": "154",
+"label": "acres cleaned and ready for reuse, 2008",
+"tag": "U.S. EPA · FORMER MAYTAG PLANT SITE · 2009",
+"at": -0.75,
+"t0": 1024.52,
+"line": "n75",
+"vd": 16.94,
+"colour": 1,
+"t1": 1042.36
+},
+{
+"type": "stat",
+"img": "sanborn1918_maytag",
+"num": "140 ft",
+"label": "wind-turbine blades: too long for the old buildings",
+"tag": "SANBORN MAP · NEWTON · NOV 1918 · THE OLD MAYTAG BUILDINGS",
+"at": -0.45,
+"t0": 1042.36,
+"line": "n76",
+"vd": 18.93,
+"t1": 1062.18
+},
+{
+"type": "photo",
+"img": "obama_trinity1",
+"tag": "WIND-TOWER STEEL IN THE FORMER MAYTAG PLANT · 2009",
+"small": 1,
+"date": "2009",
+"t0": 1062.18,
+"line": "n77",
+"vd": 15.87,
+"colour": 1,
+"t1": 1078.95
+},
+{
+"type": "photo",
+"img": "obama_trinity2",
+"tag": "PRESIDENT OBAMA IN THE FORMER MAYTAG PLANT · PETE SOUZA · 22 APRIL 2009",
+"small": 1,
+"name": "Newton, Iowa",
+"role": "22 APRIL 2009 · TRINITY STRUCTURAL TOWERS",
+"t0": 1078.95,
+"line": "n78",
+"vd": 8.37,
+"colour": 1,
+"t1": 1088.23
+},
+{
+"type": "quote",
+"img": "obama_trinity1",
+"colour": 1,
+"imgTag": "INSIDE THE FORMER MAYTAG PLANT · WHITE HOUSE PHOTO · 2009",
+"q": [
+"“These floors",
+"were dark",
+"and silent.”"
+],
+"who": "PRESIDENT BARACK OBAMA · NEWTON · 22 APRIL 2009",
+"t0": 1088.23,
+"line": "q11",
+"vd": 13.26,
+"t1": 1102.39
+},
+{
+"type": "stat",
+"img": "mural2017",
+"num": "1,100+",
+"label": "workers at the TPI blade plant",
+"tag": "“WELCOME TO NEWTON” · DAVID WILSON, 2017 (CC BY 2.0)",
+"at": 0.3,
+"t0": 1102.39,
+"line": "n79",
+"vd": 6.78,
+"colour": 1,
+"t1": 1110.07
+},
+{
+"type": "compare",
+"items": [
+[
+"2001",
+37
+],
+[
+"2015",
+-20
+]
+],
+"title": "FACTORY PAY IN JASPER COUNTY · AGAINST THE IOWA AVERAGE",
+"src": "DAVE SWENSON, IOWA STATE UNIVERSITY · PRI THE WORLD, 2017",
+"t0": 1110.07,
+"line": "n80",
+"vd": 17.46,
+"t1": 1128.43
+},
+{
+"type": "quote",
+"img": "square2014_court",
+"colour": 1,
+"imgTag": "THE SQUARE, NEWTON · 2014",
+"q": [
+"“You can’t take",
+"the good paying jobs…",
+"and replace them",
+"with half the pay.”"
+],
+"who": "KATHLEEN TIFFANY · 30 YEARS AT MAYTAG · CBS NEWS · 2007",
+"at": -0.4,
+"t0": 1128.43,
+"line": "q12",
+"vd": 14.59,
+"t1": 1143.92
+},
+{
+"type": "stat",
+"img": "square2014_a",
+"num": "710",
+"label": "jobs lost when the blade plant closed · 2021",
+"tag": "NEWTON · DAVID WILSON, 2014 (CC BY 2.0)",
+"at": -0.68,
+"t0": 1143.92,
+"line": "n81",
+"vd": 12.29,
+"colour": 1,
+"t1": 1157.11
+},
+{
+"type": "stat",
+"img": "square2014_b",
+"num": "2025",
+"label": "the blade plant reopens",
+"tag": "NEWTON · DAVID WILSON, 2014 (CC BY 2.0)",
+"at": 0.4,
+"t0": 1157.11,
+"line": "n82",
+"vd": 12.74,
+"colour": 1,
+"t1": 1170.75
+},
+{
+"type": "seq",
+"items": [
+[
+"speedway2007",
+"IOWA SPEEDWAY · MATT OWEN, 2007 (CC BY 2.0)"
+],
+[
+"speedway2017",
+"IOWA SPEEDWAY · DAVID WILSON, 2017 (CC BY 2.0)"
+],
+[
+"hq2005",
+"THE FORMER MAYTAG HEADQUARTERS · 2005"
+],
+[
+"maytag_dairy",
+"MAYTAG DAIRY FARMS, NEWTON · CHRISTIANE TAS, 2010"
+]
+],
+"t0": 1170.75,
+"line": "n83",
+"vd": 30.89,
+"t1": 1202.54
+},
+{
+"type": "pop",
+"data": [
+[
+1900,
+3682
+],
+[
+1910,
+4616
+],
+[
+1920,
+6627
+],
+[
+1930,
+11560
+],
+[
+1940,
+10462
+],
+[
+1960,
+15381
+],
+[
+1970,
+15619
+],
+[
+1980,
+15292
+],
+[
+2000,
+15579
+],
+[
+2020,
+15760
+]
+],
+"t0": 1202.54,
+"line": "n84",
+"vd": 16.16,
+"t1": 1219.6
+},
+{
+"type": "pair",
+"a": "pano1907",
+"b": "square2014_court",
+"ta": "1907 · THE SQUARE · F. J. BANDHOLTZ",
+"tb": "2014 · THE SQUARE · ≈ SAME VIEW · DAVID WILSON (CC BY 2.0)",
+"t0": 1219.6,
+"line": "n85",
+"vd": 9.03,
+"t1": 1229.52
+},
+{
+"type": "photo",
+"img": "wringer",
+"tag": "MAYTAG WRINGER WASHER · PHOTO: WATTS (CC BY 2.0)",
+"z": [
+1.0,
+1.1
+],
+"t0": 1229.52,
+"line": "n86",
+"vd": 10.83,
+"colour": 1,
+"t1": 1241.25
+},
+{
+"type": "pano",
+"img": "pano1907",
+"tag": "NEWTON, IOWA · 1907 · F. J. BANDHOLTZ",
+"from_": 0.8,
+"to": 0.3,
+"t0": 1241.25,
+"line": "n87",
+"vd": 14.96,
+"t1": 1257.11
+},
+{
+"type": "photo",
+"img": "square2014_court",
+"tag": "THE SQUARE, NEWTON · DAVID WILSON, 2014 (CC BY 2.0)",
+"z": [
+1.0,
+1.1
+],
+"t0": 1257.11,
+"line": "n88",
+"vd": 2.73,
+"colour": 1,
+"t1": 1260.74
+},
+{
+"type": "photo",
+"img": "square2014_b",
+"tag": "NEWTON · DAVID WILSON, 2014 (CC BY 2.0)",
+"z": [
+1.0,
+1.08
+],
+"t0": 1260.74,
+"line": "n89",
+"vd": 13.78,
+"colour": 1,
+"t1": 1275.42
+},
+{
+"type": "photo",
+"img": "mural2017",
+"tag": "“WELCOME TO NEWTON” · DAVID WILSON, 2017 (CC BY 2.0)",
+"z": [
+1.08,
+1.12
+],
+"t0": 1275.42,
+"line": "n90",
+"vd": 3.04,
+"colour": 1,
+"t1": 1279.96
+},
+{
+"type": "end",
+"t0": 1279.96,
+"t1": 1296.0
+}
+],
+"vo": {
+"n01": 1.2,
+"n02": 8.749,
+"n03": 17.108,
+"n04": 32.546,
+"n05": 44.196,
+"n06": 57.753,
+"n07": 70.083,
+"n08": 78.102,
+"n09": 97.067,
+"n10": 110.442,
+"n11": 124.699,
+"n12": 133.11,
+"n13": 157.012,
+"n14": 172.398,
+"n15": 181.306,
+"n16": 191.912,
+"n17": 204.895,
+"q01": 220.542,
+"n18": 236.268,
+"n19": 246.09,
+"n20": 271.585,
+"n21": 288.062,
+"n22": 305.433,
+"n23": 317.083,
+"n24": 321.785,
+"n25": 338.921,
+"n26": 350.963,
+"n27": 358.852,
+"n28": 369.196,
+"n29": 380.768,
+"n30": 387.925,
+"n31": 401.639,
+"n32": 412.062,
+"n33": 432.327,
+"n34": 450.377,
+"n35": 457.691,
+"n36": 476.368,
+"n37": 485.537,
+"n38": 502.098,
+"n39": 514.454,
+"n40": 534.229,
+"q02": 550.895,
+"n41": 556.903,
+"n42": 568.684,
+"n43": 578.735,
+"n44": 588.688,
+"n45": 600.025,
+"n46": 610.108,
+"n47": 623.822,
+"q03": 632.651,
+"q04": 642.316,
+"n48": 651.197,
+"n49": 663.161,
+"n50": 676.327,
+"n51": 685.078,
+"q05": 692.549,
+"n52": 702.475,
+"n53": 721.382,
+"n54": 734.521,
+"n55": 745.858,
+"n56": 755.967,
+"n57": 781.227,
+"n58": 789.351,
+"n59": 806.644,
+"n60": 817.197,
+"q06": 821.507,
+"n61": 830.859,
+"n62": 845.2,
+"q07": 857.608,
+"n63": 877.011,
+"n64": 885.057,
+"n65": 894.722,
+"q08": 913.948,
+"q09": 919.982,
+"n67": 930.431,
+"q10": 943.518,
+"n69": 953.418,
+"n70": 970.868,
+"n71": 978.914,
+"n72": 992.361,
+"n73": 1007.198,
+"n74": 1016.628,
+"n75": 1024.517,
+"n76": 1042.358,
+"n77": 1062.185,
+"n78": 1078.955,
+"q11": 1088.228,
+"n79": 1102.386,
+"n80": 1110.066,
+"q12": 1128.43,
+"n81": 1143.92,
+"n82": 1157.112,
+"n83": 1170.748,
+"n84": 1202.539,
+"n85": 1219.597,
+"n86": 1229.523,
+"n87": 1241.252,
+"n88": 1257.108,
+"n89": 1260.739,
+"n90": 1275.42
+},
+"subs": [
+[
+1.1,
+3.3,
+"Newton, Iowa."
+],
+[
+3.32,
+8.15,
+"Thursday, 25 October 2007."
+],
+[
+8.65,
+12.62,
+"That day, the last washing machines and dryers"
+],
+[
+12.64,
+16.51,
+"came off the line at the Maytag factory."
+],
+[
+17.01,
+19.98,
+"550 workers walked out of a building"
+],
+[
+20.0,
+23.05,
+"that covered two million square feet."
+],
+[
+23.07,
+25.88,
+"Some of them hung their work boots"
+],
+[
+25.9,
+28.7,
+"on the fence by the employee gate."
+],
+[
+28.72,
+31.95,
+"They would not need them tomorrow."
+],
+[
+32.45,
+38.49,
+"One man, after 26 years in the plant, carried out a sign."
+],
+[
+38.51,
+43.6,
+"It said: “Maytag, the dependability people.”"
+],
+[
+44.1,
+50.12,
+"For more than a hundred years, this town made washing machines."
+],
+[
+50.14,
+53.38,
+"At the peak, more than one in five"
+],
+[
+53.4,
+57.15,
+"people in Newton worked for Maytag."
+],
+[
+57.65,
+59.54,
+"If you are old enough,"
+],
+[
+59.56,
+63.69,
+"you remember the Maytag repairman on television."
+],
+[
+63.71,
+69.48,
+"He was the loneliest man in town, because Maytags never broke."
+],
+[
+69.98,
+72.69,
+"So how does the town that built"
+],
+[
+72.71,
+75.59,
+"America's most dependable machine"
+],
+[
+75.61,
+77.5,
+"end up losing it?"
+],
+[
+78.0,
+81.8,
+"This is the story of what happened to Newton."
+],
+[
+81.82,
+85.95,
+"Every picture you will see is of the real Newton,"
+],
+[
+85.97,
+88.24,
+"or of the machines it made."
+],
+[
+88.26,
+90.45,
+"Every number has a source."
+],
+[
+90.47,
+93.33,
+"And you will read the words of the"
+],
+[
+93.35,
+96.47,
+"people who built those machines."
+],
+[
+96.97,
+100.85,
+"We go from a farm-equipment shop in 1893,"
+],
+[
+100.87,
+103.8,
+"to the washer that won America,"
+],
+[
+103.82,
+109.84,
+"to the day the line stopped, and to what Newton built next."
+],
+[
+110.34,
+113.46,
+"If your family ever owned a Maytag,"
+],
+[
+113.48,
+117.32,
+"or worked a shift in a plant like this one,"
+],
+[
+117.34,
+119.9,
+"this story is yours too."
+],
+[
+124.6,
+127.92,
+"Newton sits thirty miles east of Des Moines,"
+],
+[
+127.94,
+132.51,
+"in the middle of some of the richest farmland on earth."
+],
+[
+133.01,
+136.86,
+"In 1893, four men here each put up $600."
+],
+[
+136.88,
+139.85,
+"One was Frederick Louis Maytag,"
+],
+[
+139.87,
+145.46,
+"the son of German immigrants who farmed near Laurel, Iowa."
+],
+[
+145.48,
+149.61,
+"Two were his brothers-in-law, the Bergmans."
+],
+[
+149.63,
+152.22,
+"The fourth, George Parsons,"
+],
+[
+152.24,
+156.41,
+"had invented the thing they would make."
+],
+[
+156.91,
+158.71,
+"It was a self-feeder:"
+],
+[
+158.73,
+163.22,
+"an attachment that cut the bands on bundles of grain"
+],
+[
+163.24,
+166.52,
+"and fed them into a threshing machine."
+],
+[
+166.54,
+171.8,
+"They set up in an old stove works, thirty feet by forty."
+],
+[
+172.3,
+176.5,
+"It sold. By 1902, they were the largest"
+],
+[
+176.52,
+180.71,
+"maker of self-feeders in the world."
+],
+[
+181.21,
+183.51,
+"This is Newton in 1907."
+],
+[
+183.53,
+187.45,
+"The courthouse square, the farm wagons,"
+],
+[
+187.47,
+191.31,
+"the shops with their awnings down."
+],
+[
+191.81,
+195.45,
+"That same year, Maytag tried something new."
+],
+[
+195.47,
+199.88,
+"Farm machinery sold at harvest, and then it stopped."
+],
+[
+199.9,
+204.29,
+"He needed something to make in the slow months."
+],
+[
+204.79,
+209.29,
+"So he built a washing machine. He called it the Pastime."
+],
+[
+209.31,
+214.12,
+"It was a wooden tub with a hand crank. You worked the crank,"
+],
+[
+214.14,
+216.94,
+"and a wooden dolly with pegs pushed"
+],
+[
+216.96,
+219.94,
+"the clothes around in the water."
+],
+[
+220.44,
+226.79,
+"A century later, Leland Smith, who worked 40 years at Maytag,"
+],
+[
+226.81,
+231.59,
+"showed a reporter one of those first machines."
+],
+[
+231.61,
+235.67,
+"“We call this the Milkstool Dolly.”"
+],
+[
+236.17,
+239.96,
+"He was not the only one with the idea."
+],
+[
+239.98,
+245.49,
+"Look at the fire-insurance map of Newton from 1918."
+],
+[
+245.99,
+248.86,
+"On one sheet, beside the railway:"
+],
+[
+248.88,
+252.97,
+"the Maytag Company, makers of washing machines."
+],
+[
+252.99,
+255.86,
+"Across the street, the One Minute"
+],
+[
+255.88,
+259.36,
+"Manufacturing Company. Washing machines."
+],
+[
+259.38,
+263.48,
+"Up the road, the Woodrow Manufacturing Company."
+],
+[
+263.5,
+264.96,
+"Washing machines."
+],
+[
+264.98,
+270.98,
+"The index lists a fourth, the Automatic Electric Washer Company."
+],
+[
+271.48,
+277.11,
+"A town of about 5,000 people, and four washing-machine makers."
+],
+[
+277.13,
+283.26,
+"Newton became known as the washing-machine center of the world."
+],
+[
+287.96,
+291.47,
+"Most farm homes had no electricity yet."
+],
+[
+291.49,
+294.37,
+"So in 1914, Maytag sold a washer"
+],
+[
+294.39,
+297.53,
+"with its own small gasoline engine."
+],
+[
+297.55,
+301.61,
+"The Multi-Motor. The advertisements called it"
+],
+[
+301.63,
+304.83,
+"“the farm woman's best friend.”"
+],
+[
+305.33,
+308.41,
+"In 1919, the company cast a washer"
+],
+[
+308.43,
+311.51,
+"tub in a single piece of aluminum."
+],
+[
+311.53,
+316.48,
+"People in the trade had said it could not be done."
+],
+[
+316.98,
+321.18,
+"Then came the machine that changed everything."
+],
+[
+321.68,
+324.93,
+"Howard Snyder had started as a mechanic,"
+],
+[
+324.95,
+329.01,
+"and risen to head Maytag's development department."
+],
+[
+329.03,
+332.27,
+"Maytag's washers, like most of the time,"
+],
+[
+332.29,
+334.8,
+"used a dolly under the lid that"
+],
+[
+334.82,
+338.32,
+"dragged the clothes through the water."
+],
+[
+338.82,
+341.78,
+"Snyder turned the idea upside down."
+],
+[
+341.8,
+345.95,
+"He put a vaned agitator at the bottom of the tub,"
+],
+[
+345.97,
+350.36,
+"so the water moved through the clothes instead."
+],
+[
+350.86,
+354.73,
+"Maytag called it the Gyrafoam."
+],
+[
+354.75,
+358.25,
+"It went on sale in 1922."
+],
+[
+358.75,
+362.25,
+"By one company history, it took Maytag"
+],
+[
+362.27,
+368.6,
+"from the 38th largest washer maker in the country, to the first."
+],
+[
+369.1,
+371.92,
+"Within 18 months, it was the most"
+],
+[
+371.94,
+374.93,
+"popular washing machine in America."
+],
+[
+374.95,
+380.17,
+"Trainloads of Gyrafoams left Newton in single shipments."
+],
+[
+380.67,
+387.32,
+"By 1927, Maytag had built its millionth washer."
+],
+[
+387.82,
+391.42,
+"The town grew with it."
+],
+[
+391.44,
+396.84,
+"In 1900, Newton had 3,600 people."
+],
+[
+396.86,
+401.04,
+"By 1930, it had 11,500."
+],
+[
+401.54,
+405.27,
+"In 1929, the company made record profits."
+],
+[
+405.29,
+411.46,
+"And it got through the Depression without a single losing year."
+],
+[
+411.96,
+416.77,
+"In 1932, at the bottom of that Depression,"
+],
+[
+416.79,
+419.29,
+"Fred Maytag turned 75."
+],
+[
+419.31,
+422.97,
+"To mark the day, he gave each of"
+],
+[
+422.99,
+427.53,
+"his 1,500 workers a hundred dollars."
+],
+[
+432.23,
+436.55,
+"Frederick Louis Maytag died in March 1937."
+],
+[
+436.57,
+442.64,
+"By one account, 10,000 workers and salesmen stood in a line"
+],
+[
+442.66,
+446.98,
+"five blocks long to watch his casket pass."
+],
+[
+447.0,
+449.78,
+"He is buried in Newton."
+],
+[
+450.28,
+455.16,
+"A year later, the town that had grown up on his washers"
+],
+[
+455.18,
+457.09,
+"turned on itself."
+],
+[
+457.59,
+464.56,
+"In May 1938, the company posted a notice: a 10% cut in pay."
+],
+[
+464.58,
+470.13,
+"The workers had formed a union the year before:"
+],
+[
+470.15,
+475.77,
+"Local 1116 of the United Electrical Workers."
+],
+[
+476.27,
+478.25,
+"On 9 May, they struck."
+],
+[
+478.27,
+480.97,
+"They stayed at their machines,"
+],
+[
+480.99,
+484.94,
+"so that no one could take their places."
+],
+[
+485.44,
+489.27,
+"A judge issued an injunction against the pickets."
+],
+[
+489.29,
+493.44,
+"In late June, the strikers took over the plant again,"
+],
+[
+493.46,
+496.59,
+"and held five foremen inside for a week."
+],
+[
+496.61,
+501.5,
+"Their leaders were arrested, and charged with kidnapping."
+],
+[
+502.0,
+507.86,
+"Then, on 21 July, the governor of Iowa, Nelson Kraschel,"
+],
+[
+507.88,
+513.85,
+"sent in the National Guard, and declared martial law."
+],
+[
+514.35,
+517.48,
+"Soldiers stood across from the plant."
+],
+[
+517.5,
+520.12,
+"Cars were kept two blocks away."
+],
+[
+520.14,
+524.2,
+"Club meetings and softball games were cancelled."
+],
+[
+524.22,
+528.11,
+"That night, in the streets around the factory,"
+],
+[
+528.13,
+529.81,
+"34 people were hurt."
+],
+[
+529.83,
+533.63,
+"Most of them were workers going back in."
+],
+[
+534.13,
+536.91,
+"The governor said martial law was"
+],
+[
+536.93,
+540.04,
+"“only for the benefit of the public”."
+],
+[
+540.06,
+543.6,
+"The union saw a strike broken by soldiers."
+],
+[
+543.62,
+547.25,
+"And Fred Maytag II, the founder's grandson,"
+],
+[
+547.27,
+550.29,
+"was reported to have said this:"
+],
+[
+550.79,
+556.3,
+"“Apparently, our employees weren't so happy as we thought!”"
+],
+[
+556.8,
+561.08,
+"On 3 August, the workers went back, with the cut."
+],
+[
+561.1,
+564.42,
+"If profits came back within two years,"
+],
+[
+564.44,
+568.08,
+"they would get their lost wages back."
+],
+[
+568.58,
+573.93,
+"It was a hard summer. Then the plant went back to work."
+],
+[
+578.63,
+580.98,
+"During the Second World War,"
+],
+[
+581.0,
+584.45,
+"Maytag stopped making washers altogether,"
+],
+[
+584.47,
+588.09,
+"and built parts for military aircraft."
+],
+[
+588.59,
+592.93,
+"In 1949, a new plant opened in Newton:"
+],
+[
+592.95,
+599.42,
+"Plant 2, built for the first Maytag automatic washer."
+],
+[
+599.92,
+602.97,
+"In 1962, for the first time,"
+],
+[
+602.99,
+609.51,
+"the company was run by someone who was not named Maytag."
+],
+[
+610.01,
+616.45,
+"And in 1967, Maytag found the face it would wear for decades:"
+],
+[
+616.47,
+623.22,
+"a repairman with nothing to do, because Maytags never broke."
+],
+[
+623.72,
+628.03,
+"It was an advertisement. But in Newton, people believed it,"
+],
+[
+628.05,
+632.05,
+"because they were the ones building the machines."
+],
+[
+632.55,
+636.19,
+"Carl Repp worked at the plant for 30 years."
+],
+[
+636.21,
+641.72,
+"“We made good wages there, but we also made a good product.”"
+],
+[
+642.22,
+645.28,
+"“They call us the dependability people."
+],
+[
+645.3,
+650.6,
+"I mean, that was kind of the motto we went by for many years.”"
+],
+[
+651.1,
+656.99,
+"Maytag kept making the old wringer washers until 1983."
+],
+[
+657.01,
+662.56,
+"By then, Newton had built 11.7 million of them."
+],
+[
+663.06,
+668.8,
+"At its peak, Maytag employed more than 3,000 people in Newton."
+],
+[
+668.82,
+671.22,
+"In a town of about 15,000,"
+],
+[
+671.24,
+675.73,
+"that was more than one person in every five."
+],
+[
+676.23,
+679.99,
+"And it paid for things in town as well:"
+],
+[
+680.01,
+684.48,
+"parks, the aquatic center, the auditorium."
+],
+[
+684.98,
+688.24,
+"Families worked there for generations."
+],
+[
+688.26,
+691.95,
+"And there was a number everybody knew."
+],
+[
+692.45,
+696.56,
+"As a woman in Newton told a radio reporter:"
+],
+[
+696.58,
+701.87,
+"“At Maytag, it was 30 years and you got to retire.”"
+],
+[
+702.38,
+705.1,
+"Thirty years, and a pension,"
+],
+[
+705.12,
+709.8,
+"and full medical benefits. That was the promise."
+],
+[
+709.82,
+713.13,
+"That was what dependability meant,"
+],
+[
+713.15,
+716.58,
+"to the people inside the plant."
+],
+[
+721.28,
+727.33,
+"From the 1980s, Maytag grew by buying other companies."
+],
+[
+727.35,
+733.92,
+"Jenn-Air. Magic Chef. Hoover, the vacuum cleaner maker."
+],
+[
+734.42,
+739.0,
+"It was no longer a washing-machine company in a small town."
+],
+[
+739.02,
+741.72,
+"It was a big appliance company that"
+],
+[
+741.74,
+745.26,
+"happened to have its headquarters there."
+],
+[
+745.76,
+749.79,
+"And the appliance business was changing."
+],
+[
+749.81,
+755.37,
+"Some Newton workers were laid off as early as 2003."
+],
+[
+755.87,
+759.96,
+"In 2005, Maytag was put up for sale."
+],
+[
+759.98,
+764.88,
+"A private-equity group offered $14 a share."
+],
+[
+764.9,
+770.37,
+"Haier, the Chinese appliance giant, offered $16."
+],
+[
+770.39,
+776.09,
+"Whirlpool, the biggest appliance maker in America,"
+],
+[
+776.11,
+780.63,
+"raised its bid three times, and won."
+],
+[
+781.13,
+788.75,
+"On 31 March 2006, Whirlpool owned Maytag."
+],
+[
+789.25,
+791.69,
+"Six weeks later, on 10 May,"
+],
+[
+791.71,
+795.42,
+"it announced what would happen in Newton."
+],
+[
+795.44,
+799.89,
+"The plant would close. So would the headquarters."
+],
+[
+799.91,
+806.04,
+"Nearly 1,000 jobs in the factory, and about 900 in the offices."
+],
+[
+806.54,
+812.21,
+"The governor said the state had offered more than $100 million,"
+],
+[
+812.23,
+816.6,
+"and a new modern factory. It was not enough."
+],
+[
+817.1,
+820.91,
+"Whirlpool's spokesman explained it this way:"
+],
+[
+821.41,
+825.57,
+"“Now the fundamentals of the company had eroded."
+],
+[
+825.59,
+830.26,
+"They needed to be fixed. They were losing money.”"
+],
+[
+830.76,
+835.28,
+"The president of the union local saw it differently."
+],
+[
+835.3,
+839.21,
+"He called it part of a “widespread epidemic”:"
+],
+[
+839.23,
+844.6,
+"union jobs cut, and moved to places where they paid less."
+],
+[
+845.1,
+848.09,
+"Both of those things can be true."
+],
+[
+848.11,
+853.12,
+"The washers would still be made, in Ohio and in Mexico."
+],
+[
+853.14,
+857.01,
+"They just would not be made in Newton."
+],
+[
+857.51,
+861.78,
+"A line worker named Vicky had 22 years in."
+],
+[
+861.8,
+865.35,
+"“My aunt worked there for 30 years."
+],
+[
+865.37,
+868.83,
+"My grandfather retired from there."
+],
+[
+868.85,
+872.21,
+"It's sad. It's like a death.”"
+],
+[
+876.91,
+884.46,
+"Which brings us back to Thursday, 25 October 2007."
+],
+[
+884.96,
+888.74,
+"550 people were still on the line that day."
+],
+[
+888.76,
+894.12,
+"When it stopped, there were hugs and kisses at the gate."
+],
+[
+894.62,
+899.21,
+"Mark Wickliff was 49. He had worked there 26½ years,"
+],
+[
+899.23,
+904.78,
+"three and a half short of the 30 he needed for full retirement."
+],
+[
+904.8,
+909.39,
+"Four generations of his family had worked at Maytag."
+],
+[
+909.41,
+913.35,
+"He was the one who carried out the sign."
+],
+[
+913.85,
+919.38,
+"“It's just close enough to look for another job.”"
+],
+[
+919.88,
+923.32,
+"Mike Jackson had 18 years in."
+],
+[
+923.34,
+929.83,
+"“I'm numb, I'm scared. I'll be all right, I think.”"
+],
+[
+930.33,
+933.62,
+"Someone hung a plaque on the fence,"
+],
+[
+933.64,
+936.36,
+"in the shape of a gravestone."
+],
+[
+936.38,
+939.38,
+"It said “R.I.P.” And underneath,"
+],
+[
+939.4,
+942.92,
+"in handwriting: “I love you all.”"
+],
+[
+943.42,
+948.84,
+"Mindy Pollock had been there 22 years when she was let go."
+],
+[
+948.86,
+952.82,
+"“I've seen grown men crying that day.”"
+],
+[
+953.32,
+957.86,
+"Jim Schutte, a machine repairman for 21 years,"
+],
+[
+957.88,
+963.51,
+"knew the day he would have reached his thirty: 17 August."
+],
+[
+963.53,
+966.97,
+"When would he retire now? “Probably"
+],
+[
+966.99,
+970.27,
+"never,” he said, and laughed."
+],
+[
+970.77,
+978.31,
+"In all, about 1,800 people in Newton lost their Maytag jobs."
+],
+[
+978.81,
+980.66,
+"A town of 15,000."
+],
+[
+980.68,
+987.56,
+"And the company that had been there for 114 years was gone."
+],
+[
+992.26,
+996.37,
+"Unemployment climbed to almost 10%."
+],
+[
+996.39,
+1002.99,
+"In 2010, Jasper County had the highest unemployment rate"
+],
+[
+1003.01,
+1006.6,
+"of all 99 counties in Iowa."
+],
+[
+1007.1,
+1010.08,
+"A national news program came to town,"
+],
+[
+1010.1,
+1012.76,
+"and said it had seen nothing that"
+],
+[
+1012.78,
+1016.03,
+"looked “quite as broken as Newton”."
+],
+[
+1016.53,
+1019.04,
+"But the plant was still standing."
+],
+[
+1019.06,
+1023.92,
+"And so were the people who knew how to build things in it."
+],
+[
+1024.42,
+1029.54,
+"Before anyone could use the site, it had to be cleaned."
+],
+[
+1029.56,
+1034.79,
+"Whirlpool took on the job, removing soil and groundwater"
+],
+[
+1034.81,
+1038.53,
+"contaminated with chromium and solvents."
+],
+[
+1038.55,
+1041.76,
+"By 2008, 154 acres were ready."
+],
+[
+1042.26,
+1047.7,
+"A company called TPI wanted to build wind-turbine blades"
+],
+[
+1047.72,
+1053.46,
+"in the old Maytag buildings. The blades were 140 feet long."
+],
+[
+1053.48,
+1056.29,
+"The buildings were too short."
+],
+[
+1056.31,
+1061.58,
+"So in 2008, a new plant went up in Newton instead."
+],
+[
+1062.09,
+1065.27,
+"Inside the old factory, another company"
+],
+[
+1065.29,
+1068.89,
+"began making steel towers for wind turbines."
+],
+[
+1068.91,
+1071.69,
+"The first tower section rolled out"
+],
+[
+1071.71,
+1074.48,
+"of a building that, a year before,"
+],
+[
+1074.5,
+1078.35,
+"had been making Maytag washers and dryers."
+],
+[
+1078.86,
+1083.02,
+"In April 2009, the President came to see it."
+],
+[
+1083.04,
+1087.63,
+"He described what the workers had shown him."
+],
+[
+1088.13,
+1090.77,
+"“These floors were dark and silent."
+],
+[
+1090.79,
+1093.29,
+"The only signs of a once thriving"
+],
+[
+1093.31,
+1095.96,
+"enterprise were the cement markings"
+],
+[
+1095.98,
+1098.62,
+"where the equipment had been before"
+],
+[
+1098.64,
+1101.79,
+"they were boxed up and carted away.”"
+],
+[
+1102.29,
+1106.2,
+"TPI grew to more than 1,100 workers."
+],
+[
+1106.22,
+1109.47,
+"Many had come from Maytag."
+],
+[
+1109.97,
+1115.84,
+"But the new jobs did not pay what the old ones had."
+],
+[
+1115.86,
+1120.12,
+"In 2001, factory pay in Jasper County"
+],
+[
+1120.14,
+1123.71,
+"was 37% above the Iowa average."
+],
+[
+1123.73,
+1127.83,
+"By 2015, it was about 20% below."
+],
+[
+1128.33,
+1131.49,
+"A waitress in town, with 30 years at"
+],
+[
+1131.51,
+1134.41,
+"Maytag behind her, put it simply:"
+],
+[
+1134.43,
+1139.72,
+"“You can't take the good paying jobs that they had out there"
+],
+[
+1139.74,
+1143.32,
+"and replace them with half the pay.”"
+],
+[
+1143.82,
+1148.63,
+"And in 2021, the blade plant closed as well,"
+],
+[
+1148.65,
+1153.13,
+"when its biggest customer stopped buying."
+],
+[
+1153.15,
+1156.51,
+"710 people lost their jobs."
+],
+[
+1157.01,
+1162.24,
+"In the summer of 2025, it opened its doors again,"
+],
+[
+1162.26,
+1165.13,
+"under a new ten-year lease,"
+],
+[
+1165.15,
+1170.15,
+"even as TPI itself went through bankruptcy."
+],
+[
+1170.65,
+1173.58,
+"Other things came. A race track,"
+],
+[
+1173.6,
+1177.27,
+"Iowa Speedway, opened in Newton in 2006."
+],
+[
+1177.29,
+1182.8,
+"In 2024, NASCAR's top series raced there for the first time."
+],
+[
+1182.82,
+1185.94,
+"The Maytag headquarters campus was"
+],
+[
+1185.96,
+1189.53,
+"given to the community college in 2016."
+],
+[
+1189.55,
+1194.7,
+"And on a farm just outside town, the founder's grandsons"
+],
+[
+1194.72,
+1198.48,
+"had been making a blue cheese since 1941."
+],
+[
+1198.5,
+1201.94,
+"It still carries the Maytag name."
+],
+[
+1202.44,
+1207.09,
+"Here is the part that surprised people."
+],
+[
+1207.11,
+1210.08,
+"Newton did not empty out."
+],
+[
+1210.1,
+1214.39,
+"In 1960, it had about 15,000 people."
+],
+[
+1214.41,
+1219.0,
+"In 2020, it still had about 15,000."
+],
+[
+1219.5,
+1223.36,
+"The square looks much as it did in 1907."
+],
+[
+1223.38,
+1228.92,
+"The courthouse, the shops, and no boarded-up windows."
+],
+[
+1229.42,
+1232.74,
+"For decades, America was told about a"
+],
+[
+1232.76,
+1236.17,
+"repairman who sat with nothing to fix,"
+],
+[
+1236.19,
+1240.65,
+"because the machines from Newton never broke."
+],
+[
+1241.15,
+1246.01,
+"Newton built those machines to last, and many of them did."
+],
+[
+1246.03,
+1249.37,
+"What changed was everything around them."
+],
+[
+1249.39,
+1253.74,
+"Who owned the company. Where the machines were made."
+],
+[
+1253.76,
+1256.51,
+"And what a factory job paid."
+],
+[
+1257.01,
+1260.14,
+"What stayed was the town."
+],
+[
+1260.64,
+1265.6,
+"Did you, or someone in your family, work at Maytag?"
+],
+[
+1265.62,
+1270.2,
+"Or do you still have a Maytag that never broke?"
+],
+[
+1270.22,
+1274.82,
+"Tell us in the comments. We read every one."
+],
+[
+1275.32,
+1278.76,
+"Next week: Flint, Michigan."
+]
+]
+}
